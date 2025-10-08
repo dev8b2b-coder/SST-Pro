@@ -1,0 +1,11 @@
+import React from 'react'
+
+const Button = ({color,btn_background,btn_name,btn_border}) => {
+  return (
+    <button className={`text-[23px] px-[28px] cursor-pointer py-[13px] border-2 ${btn_border ? btn_border : 'border-primary'} rounded-[50px] ${btn_background} ${color}`}>
+      {btn_name}
+    </button>
+  )
+}
+
+export default Button

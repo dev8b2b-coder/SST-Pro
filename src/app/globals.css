@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #B5D9D7;
+  --secondary: #4AA1FF;
+  --ternary :#898989;
+  --background: #000000;
+}
+
+
+body {
+  background: var(--background);
+  font-family: var(--font-mona-sans-normal);
+  max-width: 1960px;
+  margin: auto;
+}
+
+/*----------Primary color----------*/
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary);
+}
+
+/*----------Primary color----------*/
+
+/*----------ternary color----------*/
+.text-ternary {
+  color: var(--ternary);
+}
+
+.bg-ternary {
+  background-color: var(--ternary);
+}
+
+.border-ternary {
+  border-color: var(--ternary);
+}
+/*----------ternary color----------*/
+.font_light {
+  font-family: var(--font-mona-sans-normallight);
+}
+
+.main_title {
+  font-size: 55px;
+  line-height: 70px;
+}
+
+.main_description {
+  font-size: 22px;
+  line-height: 40px;
+}
+
+.inn_container {
+  max-width: 1750px;
+  margin: auto;
+}
+
+.sub_description {
+  font-size: 18px;
+  line-height: 27px;
+  font-family: var(--font-mona-sans-normallight);
+}
+
+.gradient_text {
+  background: linear-gradient(90deg,
+      rgba(74, 161, 255, 1) 0%,
+      rgba(181, 217, 215, 1) 50%,
+      rgba(74, 161, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+.gradient_border {
+  border: 2px solid transparent;
+  background: linear-gradient(#000, #000) padding-box, linear-gradient(178deg, #4aa1ff96, #000000) border-box;
+}
+
+
+@media screen and (max-width:1750px) {
+    .inn_container {
+      padding: 0 3%;
+    }
+}

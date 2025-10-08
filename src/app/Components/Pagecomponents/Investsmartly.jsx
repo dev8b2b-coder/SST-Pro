@@ -1,0 +1,70 @@
+import React from "react";
+import Title from "../Uiux/Title";
+import Description from "../Uiux/Description";
+import Image from "next/image";
+import investsmartly from "../../../../public/images/Investsmartly.webp";
+const Investsmartly = () => {
+  return (
+    <div>
+      <div className="inn_container py-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+          <div>
+            <Title
+              title={
+                'Learn to <span class="gradient_text"> Invest <br /> Smartly</span> '
+              }
+              color={"text-white"}
+            />
+          </div>
+          <div>
+            <Description
+              description={
+                "We guide you through financial literacy, investing <br/> strategies, and market insights."
+              }
+              color={"text-white"}
+              align={"text-end"}
+            />
+          </div>
+        </div>
+        <div className="pt-18 relative">
+          <Image
+            src={investsmartly}
+            alt=""
+            width={3000}
+            height={500}
+            className="max-w-[675px] m-auto"
+          />
+          <div className="text-end absolute top-[5%] left-[20%]">
+            <p className="text-[25px] text-primary pb-3">
+              Portfolio Building Tips
+            </p>
+            <span className="sub_description text-ternary ">
+              Create a balanced portfolio tailored specifically <br /> to your
+              long-term financial goals.
+            </span>
+          </div>
+          <div className="text-end absolute bottom-[28%] left-[8%]">
+            <p className="text-[25px] text-primary pb-3">
+              Step-by-Step Investment Tutorials
+            </p>
+            <span className="sub_description text-ternary ">
+              Learn the basics through interactive lessons <br /> and
+              easy-to-follow guides for beginners.
+            </span>
+          </div>
+          <div className="text-start absolute bottom-[25%] right-[17%]">
+            <p className="text-[25px] text-primary pb-3">
+              Risk Management Guidance
+            </p>
+            <span className="sub_description text-ternary ">
+              Understand how to protect your capital <br /> and make informed
+              decisions to <br /> minimize exposure.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Investsmartly;
