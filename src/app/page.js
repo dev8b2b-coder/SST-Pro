@@ -6,6 +6,8 @@ import Whysst from "./Components/Pagecomponents/Whysst";
 import Aboutsst from "./Components/Pagecomponents/Aboutsst";
 import Corevalue from "./Components/Pagecomponents/Corevalue";
 import Faqs from "./Components/Pagecomponents/Faqs";
+import Image from "next/image";
+import demibanner from "../.././public/images/demibanner.webp"
 const faqData = [
   {
     question: "What is SST?",
@@ -37,6 +39,15 @@ const faqData = [
 function page() {
   return (
     <div className="bg-black">
+      <div>
+        <Image
+         src={demibanner}
+         alt=""
+         width={5000}
+         height={500}
+         className="w-full"
+         />
+      </div>
       <Topstock />
       <Trackgroth />
       <Investsmartly />
