@@ -31,6 +31,22 @@ body {
 
 /*----------Primary color----------*/
 
+/*----------secondary color----------*/
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-secondary {
+  background-color: var(--secondary);
+}
+
+.border-secondary {
+  border-color: var(--secondary);
+}
+
+/*----------Primary color----------*/
+
 /*----------ternary color----------*/
 .text-ternary {
   color: var(--ternary);
@@ -49,7 +65,7 @@ body {
 }
 
 .main_title {
-  font-size: 55px;
+  font-size: 65px;
   line-height: 70px;
 }
 
@@ -92,4 +108,39 @@ body {
     .inn_container {
       padding: 0 3%;
     }
+}
+
+
+
+/* Css of swiper slider  */
+.swiper-button-prev {
+   background: #212324;
+   width: 50px !important;
+   height: 50px !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
+   border-radius: 50%;
+}
+.swiper-button-prev svg path{
+   fill: white;
+   height: 6px;
+   width: 13px;
+}
+.swiper-button-next {
+   background: #212324;
+   width: 50px !important;
+   height: 50px !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
+   border-radius: 50%;
+}
+.swiper-button-next svg path{
+   fill: white;
+   height: 6px;
+   width: 13px;
+}
+.swiper-button-prev svg,.swiper-button-next svg {
+  width: 13px !important;
 }

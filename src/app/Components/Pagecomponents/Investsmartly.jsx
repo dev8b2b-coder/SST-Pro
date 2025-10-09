@@ -6,7 +6,7 @@ import investsmartly from "../../../../public/images/Investsmartly.webp";
 const Investsmartly = () => {
   return (
     <div>
-      <div className="inn_container py-32">
+      <div className="inn_container pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div>
             <Title

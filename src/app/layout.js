@@ -1,4 +1,5 @@
 
+import Footer from "./Components/Uiux/Footer";
 import "./globals.css";
 import localFont from "next/font/local";
 const monaSansnormal = localFont({
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         cz-shortcut-listen="true"
       >
         {children}
+        <Footer />
       </body>
     </html>
   );
