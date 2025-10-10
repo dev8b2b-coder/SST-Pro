@@ -30,9 +30,9 @@
 }
 
 .move_horizontal:hover:after {
-    right: 0
+    right: -5px
 }
 
 .move_horizontal:hover:before {
-    left: 0
+    left: -5px
 }
