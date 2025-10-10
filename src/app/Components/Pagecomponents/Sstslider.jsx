@@ -35,7 +35,7 @@ const Sstslider = ({ sliderdata }) => {
         {sliderdata.map((data, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="relative group">
+              <div className="relative group max-w-[700px] m-auto hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
                 <Image
                   src={data.image}
                   alt={data.title}
@@ -43,7 +43,7 @@ const Sstslider = ({ sliderdata }) => {
                   height={500}
                   className="max-w-[700px] m-auto"
                 />
-                <div className="absolute top-0  w-full h-full flex items-center z-[1]">
+                <div className="absolute top-0  w-full h-full flex items-center z-[1] ">
                   <div className="flex flex-col justify-between h-[90%] w-full max-w-[650px] m-auto">
                     <div className="w-[64px] h-[64px] flex items-center justify-center group-hover:bg-[var(--primary)] bg-[var(--secondary)] rounded-[50%]">
                       <Image

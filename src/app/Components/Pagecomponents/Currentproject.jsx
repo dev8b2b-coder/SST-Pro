@@ -8,7 +8,7 @@ const Currentproject = () => {
     <div>
       <div className="inn_container pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-          <div   >
+          <div>
             <Title
               title={
                 'Current <span class="gradient_text"> Working  <br/> Projects </span> '
@@ -16,7 +16,7 @@ const Currentproject = () => {
               color={"text-white"}
             />
           </div>
-          <div   >
+          <div>
             <Description
               description={
                 "Manage your current projects seamlessly, track updates, <br/> and optimize workflows for better productivity."
@@ -27,7 +27,7 @@ const Currentproject = () => {
           </div>
         </div>
         <div className="pt-18">
-         <Currentprojectslider/>
+          <Currentprojectslider />
         </div>
       </div>
     </div>

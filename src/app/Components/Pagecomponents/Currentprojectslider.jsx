@@ -25,20 +25,6 @@ const industries = [
     description:
       "Invest in properties that build long-term  <br/> value and stability.",
     icon: currencycheck
-  },
-  {
-    image: cardbanner1,
-    title: "Forex Trading",
-    description:
-      "Navigate global currencies with <br/> precision and smart strategies.",
-    icon: currencycheck
-  },
-  {
-    image: cardbanner2,
-    title: "Real Estate",
-    description:
-      "Invest in properties that build long-term  <br/> value and stability.",
-    icon: currencycheck
   }
 ];
 const Currentprojectslider = () => {
@@ -53,30 +39,28 @@ const Currentprojectslider = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
   return (
-    <div className="max-w-[1280px] m-auto">
+    <div className="max-w-[1490px] m-auto">
       <Swiper
         loop
         // autoplay={{ delay: 3000 }}
         speed={1500}
         slidesPerView={slideitem}
-        pagination={{ clickable: true }}
-        navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
         className="h-[475px]"
       >
         {industries.map((data, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="relative max-w-[520px] m-auto group cursor-pointer">
+              <div className="relative max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
                 <Image
                   src={data.image}
                   alt={data.title}
                   width={1000}
                   height={500}
-                  className="max-w-[520px] m-auto brightness-[0.5] relative z-[1]"
+                  className="max-w-[700px] m-auto brightness-[0.5] relative z-[1]"
                 />
                 <div className="absolute top-0  w-full h-full flex items-center z-[2]">
-                  <div className="flex flex-col justify-between h-[90%] w-full max-w-[470px] m-auto">
+                  <div className="flex flex-col justify-between h-[90%] w-full max-w-[650px] m-auto">
                     <div className="w-[64px] h-[64px] flex items-center justify-center bg-[var(--secondary)] group-hover:bg-[var(--primary)] rounded-[50%] transition-all duration-500">
                       <Image
                         src={data.icon}

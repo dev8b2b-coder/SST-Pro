@@ -12,18 +12,18 @@ import cardbanner10 from "../../../../public/images/trackcard10.webp";
 import Image from "next/image";
 import Arrowbtn from "../Uiux/Arrowbtn";
 const industries = [
-  {
-    image: cardbanner3,
-    title: "Mining",
-    description:
-      "Harness opportunities in natural resources <br/> and global demand.",
-    cardvalue1: "$700B+",
-    cardvaluetype1: "Industry",
-    cardvalue2: "5",
-    cardvaluetype2: "Top Commodities",
-    cardvalue3: "6%",
-    cardvaluetype3: "Annual Growth"
-  },
+  // {
+  //   image: cardbanner3,
+  //   title: "Mining",
+  //   description:
+  //     "Harness opportunities in natural resources <br/> and global demand.",
+  //   cardvalue1: "$700B+",
+  //   cardvaluetype1: "Industry",
+  //   cardvalue2: "5",
+  //   cardvaluetype2: "Top Commodities",
+  //   cardvalue3: "6%",
+  //   cardvaluetype3: "Annual Growth"
+  // },
   {
     image: cardbanner4,
     title: "Sugar Plant",
@@ -48,18 +48,18 @@ const industries = [
     cardvalue3: "12%",
     cardvaluetype3: "Yearly Revenue Rise"
   },
-  {
-    image: cardbanner6,
-    title: "Bio Chemical",
-    description:
-      "Advancing industries with eco-friendly <br/> chemical solutions.",
-    cardvalue1: "$820B+",
-    cardvaluetype1: "Market",
-    cardvalue2: "9%",
-    cardvaluetype2: "CAGR",
-    cardvalue3: "60%",
-    cardvaluetype3: "Eco-based Demand"
-  },
+  // {
+  //   image: cardbanner6,
+  //   title: "Bio Chemical",
+  //   description:
+  //     "Advancing industries with eco-friendly <br/> chemical solutions.",
+  //   cardvalue1: "$820B+",
+  //   cardvaluetype1: "Market",
+  //   cardvalue2: "9%",
+  //   cardvaluetype2: "CAGR",
+  //   cardvalue3: "60%",
+  //   cardvaluetype3: "Eco-based Demand"
+  // },
   {
     image: cardbanner7,
     title: "Oil & Energy",
