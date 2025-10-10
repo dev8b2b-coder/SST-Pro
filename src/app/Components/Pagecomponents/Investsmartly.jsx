@@ -8,7 +8,7 @@ const Investsmartly = () => {
     <div>
       <div className="inn_container pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-          <div>
+          <div   >
             <Title
               title={
                 'Learn to <span class="gradient_text"> Invest <br /> Smartly</span> '
@@ -16,7 +16,7 @@ const Investsmartly = () => {
               color={"text-white"}
             />
           </div>
-          <div>
+          <div   >
             <Description
               description={
                 "We guide you through financial literacy, investing <br/> strategies, and market insights."
@@ -34,7 +34,7 @@ const Investsmartly = () => {
             height={500}
             className="max-w-[675px] m-auto"
           />
-          <div className="text-end absolute top-[5%] left-[20%]">
+          <div className="text-end absolute top-[5%] left-[20%] fade_up"  data-aos="fade-up">
             <p className="text-[25px] text-primary pb-3">
               Portfolio Building Tips
             </p>
@@ -43,7 +43,7 @@ const Investsmartly = () => {
               long-term financial goals.
             </span>
           </div>
-          <div className="text-end absolute bottom-[28%] left-[8%]">
+          <div className="text-end absolute bottom-[28%] left-[8%]"  data-aos="fade-up">
             <p className="text-[25px] text-primary pb-3">
               Step-by-Step Investment Tutorials
             </p>
@@ -52,7 +52,7 @@ const Investsmartly = () => {
               easy-to-follow guides for beginners.
             </span>
           </div>
-          <div className="text-start absolute bottom-[25%] right-[17%]">
+          <div className="text-start absolute bottom-[25%] right-[17%]"  data-aos="fade-up">
             <p className="text-[25px] text-primary pb-3">
               Risk Management Guidance
             </p>

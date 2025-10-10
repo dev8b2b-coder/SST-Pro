@@ -10,13 +10,13 @@ const Aboutsst = () => {
     <div className=" pt-32">
       <div className="inn_container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-          <div>
+          <div   >
             <Title
               title={'<span class="gradient_text">About SST Pro</span> '}
               color={"text-white"}
             />
           </div>
-          <div>
+          <div   >
             <Description
               description={
                 "Established 2 years ago, SST Pro has been dedicated to helping <br/> clients achieve smarter growth and financial freedom."

@@ -56,7 +56,7 @@ function Topstock() {
     <div className="pt-32">
       <div className="inn_container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-          <div>
+          <div   >
             <Title
               title={
                 'Explore <span class="gradient_text"> Top  Stocks <br/> & Market </span> Opportunities'
@@ -64,7 +64,7 @@ function Topstock() {
               color={"text-white"}
             />
           </div>
-          <div>
+          <div   >
             <Description
               description={
                 "Stay ahead with real-time market insights and <br /> trending stocks curated for you."
@@ -78,8 +78,8 @@ function Topstock() {
       <div className="pt-18 cursor-pointer">
         <Marquee pauseOnHover={true}>
           {stockCards.map((data, index) =>
-            <div key={index} className="mx-3">
-              <div className="min-w-[415px] w-full border-2 border-[#b5d9d774] p-[40px] bg-cover bg-no-repeat bg-[radial-gradient(circle,rgba(11,13,15,1)_0%,rgba(35,36,37,1)_100%)] rounded-[45px]">
+            <div key={index} className="mx-3 py-6">
+              <div className="min-w-[415px] w-full border-2 border-[#b5d9d774] p-[40px] bg-cover bg-no-repeat bg-[radial-gradient(circle,rgba(11,13,15,1)_0%,rgba(35,36,37,1)_100%)] rounded-[45px] transition-all duration-500 hover:scale-[1.03] hover:shadow-[-1px_0px_20px_7px_#ffffff63]">
                 <p className="text-[#898989] textxl">
                   {data.cardsub_name}
                 </p>

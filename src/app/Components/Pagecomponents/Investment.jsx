@@ -51,6 +51,8 @@ const Investment = () => {
                   "Sign up, request a demo, or explore our training resources."
                 }
                 color={"text-black"}
+                align={'text-start'}
+                items_start={true}
               />
               <div className="flex gap-5 pt-8">
                 <Button

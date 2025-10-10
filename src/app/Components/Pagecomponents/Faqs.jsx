@@ -14,7 +14,7 @@ const Faqs = ({faqData}) => {
     <div>
       <div className="inn_container pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
-          <div>
+          <div   >
             <Title
               title={
                 ' Frequently <span class="gradient_text">Asked <br/> Questions</span> '
@@ -22,7 +22,7 @@ const Faqs = ({faqData}) => {
               color={"text-white"}
             />
           </div>
-          <div>
+          <div   >
             <Description
               description={
                 "Get quick answers to the most common <br /> questions about SST."

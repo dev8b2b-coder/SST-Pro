@@ -3,7 +3,7 @@
 :root {
   --primary: #B5D9D7;
   --secondary: #4AA1FF;
-  --ternary :#898989;
+  --ternary: #898989;
   --background: #000000;
 }
 
@@ -59,6 +59,7 @@ body {
 .border-ternary {
   border-color: var(--ternary);
 }
+
 /*----------ternary color----------*/
 .font_light {
   font-family: var(--font-mona-sans-normallight);
@@ -78,7 +79,10 @@ body {
   max-width: 1750px;
   margin: auto;
 }
-
+.banner_container {
+  max-width: 1880px;
+  margin: auto;
+}
 .sub_description {
   font-size: 18px;
   line-height: 27px;
@@ -96,51 +100,63 @@ body {
   color: transparent;
 }
 
-
+.gradient_bg {
+  background: var(--secondary);
+  background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 50%, var(--secondary) 100%);
+}
 
 .gradient_border {
   border: 2px solid transparent;
   background: linear-gradient(#000, #000) padding-box, linear-gradient(178deg, #4aa1ff96, #000000) border-box;
 }
 
+.transparent_text {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--primary);
+}
 
 @media screen and (max-width:1750px) {
-    .inn_container {
-      padding: 0 3%;
-    }
+  .inn_container {
+    padding: 0 3%;
+  }
 }
 
 
 
 /* Css of swiper slider  */
 .swiper-button-prev {
-   background: #212324;
-   width: 50px !important;
-   height: 50px !important;
-   display: flex !important;
-   align-items: center !important;
-   justify-content: center !important;
-   border-radius: 50%;
+  background: #212324;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50%;
 }
-.swiper-button-prev svg path{
-   fill: white;
-   height: 6px;
-   width: 13px;
+
+.swiper-button-prev svg path {
+  fill: white;
+  height: 6px;
+  width: 13px;
 }
+
 .swiper-button-next {
-   background: #212324;
-   width: 50px !important;
-   height: 50px !important;
-   display: flex !important;
-   align-items: center !important;
-   justify-content: center !important;
-   border-radius: 50%;
+  background: #212324;
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50%;
 }
-.swiper-button-next svg path{
-   fill: white;
-   height: 6px;
-   width: 13px;
+
+.swiper-button-next svg path {
+  fill: white;
+  height: 6px;
+  width: 13px;
 }
-.swiper-button-prev svg,.swiper-button-next svg {
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
   width: 13px !important;
 }

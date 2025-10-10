@@ -1,6 +1,8 @@
 
 import Footer from "./Components/Uiux/Footer";
+import Header from "./Components/Uiux/Header";
 import "./globals.css";
+import "./Animations.css"
 import localFont from "next/font/local";
 const monaSansnormal = localFont({
   src: [{ path: "../../public/fonts/Mona-Sans-MediumWide.ttf" }],
@@ -19,8 +21,13 @@ export default function RootLayout({ children }) {
         className={` ${monaSansnormallight.variable} ${monaSansnormal.variable} antialiased`}
         cz-shortcut-listen="true"
       >
-        {children}
-        <Footer />
+        <div className="relative max-w-[1960px] m-auto">
+          <div className="absolute w-full top-4 z-[10]">
+            <Header />
+          </div>
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

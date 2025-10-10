@@ -11,7 +11,7 @@ const Fotterlinks = ({title,linklist,border}) => {
         {
           linklist.map((data,index)=>(
             <Link href={data.pagelink} key={index}>
-              <li className='text-[14px] md:text-lg 2xl:text-xl font_light font-light text-white'>{data.pagename}</li>
+              <li className='text-[14px] md:text-lg 2xl:text-xl font_light font-light relative hover:after:bg-[var(--secondary)] hover:before:bg-[var(--secondary)] text-white w-max move_horizontal hover:text-[var(--secondary)] transition-all duration-300'>{data.pagename}</li>
             </Link>
           ))
         }

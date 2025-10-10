@@ -1,0 +1,38 @@
+
+.move_horizontal:after,
+.move_horizontal:focus:after,
+.move_horizontal:focus:before,
+.move_horizontal:hover:after,
+.move_horizontal:hover:before {
+    height: 100%;
+    width: 3px
+}
+
+.move_horizontal:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 50%;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.move_horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+}
+
+.move_horizontal:hover:after {
+    right: 0
+}
+
+.move_horizontal:hover:before {
+    left: 0
+}
