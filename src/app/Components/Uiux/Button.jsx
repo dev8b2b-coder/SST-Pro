@@ -1,28 +1,50 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import btnarrow from "../../../../public/icons/arrow.svg";
+import whitearrow from "../../../../public/icons/whitearrow.svg";
 import Image from "next/image";
-const Button = ({ color, btn_background, btn_name, btn_border, shadow,icon,border_bottom}) => {
+const Button = ({
+  color,
+  btn_background,
+  btn_name,
+  btn_border,
+  shadow,
+  icon,
+  border_bottom
+}) => {
+  const [liquidcClass, setLiquidClass] = useState(true);
+  console.log(liquidcClass);
+
   return (
-    <button
-      className={`text-[23px] px-[28px] cursor-pointer py-[12px] border-[3px] ${border_bottom} flex items-center gap-2 ${btn_border
-        ? btn_border
-        : "border-primary"} rounded-[50px] ${btn_background} ${color} ${shadow
-        ? "shadow-[1px_3px_0px_#3A3A3A]"
-        : ""}`}
+    <div
+      className="relative overflow-hidden rounded-[50px] cus_btn transition-all duration-500 z-[3]"
+      onMouseEnter={() => setLiquidClass(false)}
+      onMouseLeave={() => setLiquidClass(true)}
     >
-      {btn_name}
-      {icon
-        ? <div>
-            <Image
-              src={btnarrow}
-              alt="arrow"
-              width={1000}
-              height={500}
-              className="max-w-[24px]"
-            />
-          </div>
-        : null}
-    </button>
+      <button
+        className={`text-[23px] px-[28px] relative z-[2] rounded-[50px] transition-all duration-500 overflow-hidden  border-[3px] cursor-pointer py-[12px]  ${border_bottom} flex items-center gap-2 ${btn_border
+          ? btn_border
+          : "border-primary"} ${liquidcClass
+          ? "text-white "
+          : `${color}  ${btn_border} ${btn_background}`}  ${shadow
+          ? "shadow-[1px_3px_0px_#3A3A3A]"
+          : ""}`}
+      >
+        {btn_name}
+        {icon
+          ? <div>
+              <Image
+                src={liquidcClass ? whitearrow : btnarrow}
+                alt="arrow"
+                width={1000}
+                height={500}
+                className="max-w-[24px]  transition-all duration-500 "
+              />
+            </div>
+          : null}
+      </button>
+      {liquidcClass ? <div className="liquid" /> : null}
+    </div>
   );
 };
 

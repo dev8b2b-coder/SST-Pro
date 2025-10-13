@@ -90,7 +90,7 @@ const Footer = () => {
         <Investment />
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
-          <div className="inn_container py-18 px-24 shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[150px] rounded-tr-[150px]">
+          <div className="inn_container pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[150px] rounded-tr-[150px]">
             <div className="2xl:px-[3%]">
               <div className="hidden md:grid grid-cols-4">
                 <div>

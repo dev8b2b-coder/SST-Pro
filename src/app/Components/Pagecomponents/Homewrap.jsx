@@ -37,7 +37,6 @@ const faqData = [
 ];
 
 function Homewrap() {
-
   return (
     <div className="bg-black">
       <Banner />

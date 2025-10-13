@@ -60,7 +60,7 @@ const Header = () => {
           {headerlinks.map((data, index) =>
             <div
               key={index}
-              className="border-r-2 border-[#4AA1FF4D] cursor-pointer group py-2 relative z-[2]"
+              className="border-r-2 border-[#4AA1FF4D]  cursor-pointer group py-2 relative z-[2]"
             >
               <Link href={data.pagelink}>
                 <span
@@ -73,7 +73,7 @@ const Header = () => {
                 </span>
                 {currentpath === data.pagelink
                   ? null
-                  : <span className="bg-secondary border-b-4 border-black rounded-[20px] my-auto h-[90%] left-0 absolute top-[5%] scale-0 translate-y-[50px] transition-all duration-500 w-full z-[1] group-hover:scale-100 group-hover:translate-y-0" />}
+                  : <span className="bg-secondary border-b-4 border-black rounded-[20px]  my-auto h-[90%] left-0 absolute top-[5%] scale-0 translate-y-[50px] transition-all duration-500 w-full z-[1] group-hover:scale-100 group-hover:translate-y-0" />}
               </Link>
             </div>
           )}
