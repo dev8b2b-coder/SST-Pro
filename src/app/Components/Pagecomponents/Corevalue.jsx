@@ -27,14 +27,14 @@ const Corevalue = () => {
               className="max-w-[400px] m-auto"
             />
 
-            <div className="absolute top-[13%] left-[10%] max-w-[430px] w-full text-center">
+            <div className="absolute top-[13%] left-[6%] 2xl:left-[10%] max-w-[430px] w-full text-center">
               <p className="text-[25px] gradient_text pb-2 w-max m-auto">Integrity</p>
               <span className="sub_description text-white ">
                 We believe in honesty, transparency, and ethical <br />{" "}
                 practices in every decision.
               </span>
             </div>
-            <div className="absolute bottom-[30%] left-[10%]  max-w-[430px] w-full text-center">
+            <div className="absolute bottom-[30%] left-[6%] 2xl:left-[10%]  max-w-[430px] w-full text-center">
               <p className="text-[25px] gradient_text pb-2 w-max m-auto">
                 Client-Centricity
               </p>

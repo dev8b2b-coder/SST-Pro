@@ -21,7 +21,7 @@ const Arrowbtn = ({ width_height }) => {
           </div>
           <div className="absolute w-full h-full flex justify-center items-center left-[-200px] bottom-[-200px] group-hover:bottom-[0px]   group-hover:left-[0px] transition-all duration-500 z-[2]">
             <Image
-              src={btnarrow}
+              src={whitearrow}
               alt="arrow"
               width={1000}
               height={500}

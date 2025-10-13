@@ -8,8 +8,8 @@ import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
 const Investment = () => {
   return (
-    <div className="py-32">
-      <div className="inn_container overflow-hidden relative">
+    <div className="py-32 overflow-hidden">
+      <div className="inn_container relative">
         <div className="pt-24">
           <Image
             src={investmentbanner}
@@ -39,8 +39,8 @@ const Investment = () => {
         </div>
         <div className="absolute bottom-0 h-full max-h-[483px] w-full grid grid-cols-2">
           <div />
-          <div className="flex items-center">
-            <div className="">
+          <div className="flex items-center relative left-[-5%] 2xl:left-0">
+            <div className="pt-12 2xl:pt-0">
               <Title
                 title={"Start Your Investment <br/> Journey Today"}
                 color={"text-black"}

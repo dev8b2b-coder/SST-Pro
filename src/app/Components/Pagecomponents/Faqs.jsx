@@ -12,7 +12,7 @@ const Faqs = ({faqData}) => {
   };
   return (
     <div>
-      <div className="inn_container pt-32">
+      <div className="inn_container pt-24  2xl:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div   >
             <Title

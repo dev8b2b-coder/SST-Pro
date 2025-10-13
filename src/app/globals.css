@@ -79,10 +79,12 @@ body {
   max-width: 1750px;
   margin: auto;
 }
+
 .banner_container {
   max-width: 1880px;
   margin: auto;
 }
+
 .sub_description {
   font-size: 18px;
   line-height: 27px;
@@ -113,12 +115,6 @@ body {
 .transparent_text {
   color: transparent;
   -webkit-text-stroke: 1px var(--primary);
-}
-
-@media screen and (max-width:1750px) {
-  .inn_container {
-    padding: 0 3%;
-  }
 }
 
 
@@ -159,4 +155,46 @@ body {
 .swiper-button-prev svg,
 .swiper-button-next svg {
   width: 13px !important;
+}
+
+
+@media screen and (max-width:1840px) {
+  .inn_container {
+    padding-inline:3%;
+  }
+
+  .banner_container {
+    padding: 0 1.5%;
+  }
+}
+
+@media screen and (max-width:1800px) {
+  .cus_header {
+    max-height: 80px;
+  }
+}
+
+@media screen and (max-width:1660px) {
+  .cus_header {
+    max-height: 76px;
+  }
+
+  .main_description {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .main_title {
+    font-size: 55px;
+    line-height: 65px;
+  }
+  .invest_card1 {
+    left: 13%;
+  }
+   .invest_card2 {
+    left: 1%;
+  }
+     .invest_card3 {
+    right: 11%;
+  }
 }

@@ -44,10 +44,10 @@ const Header = () => {
   return (
     <div className="px-[3%]">
       <div
-        className="max-w-[1600px] m-auto flex justify-between items-center bg-cover px-[35px] py-[13px] rounded-[60px] bg-no-repeat"
+        className="max-w-[1600px] cus_header w-[88%] m-auto flex justify-between items-center bg-cover px-[35px] py-[13px] rounded-[60px] bg-no-repeat"
         style={{ backgroundImage: `url(${Headerbg.src})` }}
       >
-        <div className="xl:min-w-[185px]">
+        <div className="2xl:min-w-[185px]">
           <Image
             src={Logo}
             alt="Logo"
@@ -64,7 +64,7 @@ const Header = () => {
             >
               <Link href={data.pagelink}>
                 <span
-                  className={` text-[22px] relative z-[2] font_light px-5 ${currentpath ===
+                  className={` text-xl 2xl:text-[22px] relative z-[2] font_light px-5 ${currentpath ===
                   data.pagelink
                     ? "text-secondary font-semibold"
                     : "text-white font-medium"}`}

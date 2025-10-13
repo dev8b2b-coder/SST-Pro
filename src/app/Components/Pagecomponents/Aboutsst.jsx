@@ -7,7 +7,7 @@ import visionblack from "../../../../public/icons/visionblack.svg";
 import Image from "next/image";
 const Aboutsst = () => {
   return (
-    <div className=" pt-32">
+    <div className=" pt-24  2xl:pt-32">
       <div className="inn_container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div   >
@@ -72,7 +72,7 @@ const Aboutsst = () => {
             </div>
           </div>
           <div>
-            <Image src={aboutsst} alt="" width={1000} height={500} className="max-w-[540px] mr-auto" />
+            <Image src={aboutsst} alt="" width={1000} height={500} className=" max-w-[450px] 2xl:max-w-[540px] mr-auto" />
           </div>
         </div>
       </div>

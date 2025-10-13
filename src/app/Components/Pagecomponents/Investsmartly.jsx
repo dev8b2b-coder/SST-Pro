@@ -6,7 +6,7 @@ import investsmartly from "../../../../public/images/Investsmartly.webp";
 const Investsmartly = () => {
   return (
     <div>
-      <div className="inn_container pt-32">
+      <div className="inn_container pt-24  2xl:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div   >
             <Title
@@ -32,9 +32,9 @@ const Investsmartly = () => {
             alt=""
             width={3000}
             height={500}
-            className="max-w-[675px] m-auto"
+            className="max-w-[550px] 2xl:max-w-[675px] m-auto"
           />
-          <div className="text-end absolute top-[5%] left-[20%] fade_up"  data-aos="fade-up">
+          <div className="text-end absolute top-[5%] left-[20%] fade_up invest_card1"  data-aos="fade-up">
             <p className="text-[25px] text-primary pb-3">
               Portfolio Building Tips
             </p>
@@ -43,7 +43,7 @@ const Investsmartly = () => {
               long-term financial goals.
             </span>
           </div>
-          <div className="text-end absolute bottom-[28%] left-[8%]"  data-aos="fade-up">
+          <div className="text-end absolute bottom-[28%] left-[8%] invest_card2"  data-aos="fade-up">
             <p className="text-[25px] text-primary pb-3">
               Step-by-Step Investment Tutorials
             </p>
@@ -52,7 +52,7 @@ const Investsmartly = () => {
               easy-to-follow guides for beginners.
             </span>
           </div>
-          <div className="text-start absolute bottom-[25%] right-[17%]"  data-aos="fade-up">
+          <div className="text-start absolute bottom-[25%] right-[17%] invest_card3"  data-aos="fade-up">
             <p className="text-[25px] text-primary pb-3">
               Risk Management Guidance
             </p>

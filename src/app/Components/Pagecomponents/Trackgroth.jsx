@@ -115,7 +115,7 @@ const industries = [
 const Trackgroth = () => {
   return (
     <div>
-      <div className="inn_container pt-32">
+      <div className="inn_container pt-24  2xl:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div   >
             <Title
@@ -147,7 +147,7 @@ const Trackgroth = () => {
                     height={500}
                     className=""
                   />
-                  <Arrowbtn width_height={" w-[80px] h-[80px]"} />
+                  <Arrowbtn width_height={"w-[65px] 2xl:w-[80px] h-[65px] 2xl:h-[80px]"} />
                 </div>
                 <div className="max-w-[510px] m-auto pt-8">
                   <h4 className="text-[30px] gradient_text w-max">

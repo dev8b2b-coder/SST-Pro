@@ -12,17 +12,17 @@ const Button = ({
   icon,
   border_bottom
 }) => {
-  const [liquidcClass, setLiquidClass] = useState(true);
+  const [liquidcClass, setLiquidClass] = useState(false);
   console.log(liquidcClass);
 
   return (
     <div
       className="relative overflow-hidden rounded-[50px] cus_btn transition-all duration-500 z-[3]"
-      onMouseEnter={() => setLiquidClass(false)}
-      onMouseLeave={() => setLiquidClass(true)}
+      onMouseEnter={() => setLiquidClass(true)}
+      onMouseLeave={() => setLiquidClass(false)}
     >
       <button
-        className={`text-[23px] px-[28px] relative z-[2] rounded-[50px] transition-all duration-500 overflow-hidden  border-[3px] cursor-pointer py-[12px]  ${border_bottom} flex items-center gap-2 ${btn_border
+        className={`text-[23px] px-[24px] 2xl:px-[28px] py-[9px] 2xl:py-[12px] relative z-[2] rounded-[50px] transition-all duration-500 overflow-hidden  border-[3px] cursor-pointer   ${border_bottom} flex items-center gap-2 ${btn_border
           ? btn_border
           : "border-primary"} ${liquidcClass
           ? "text-white "

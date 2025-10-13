@@ -51,16 +51,16 @@ const Currentprojectslider = () => {
         {industries.map((data, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="relative max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
+              <div className="relative max-w-[620px] 2xl:max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
                 <Image
                   src={data.image}
                   alt={data.title}
                   width={1000}
                   height={500}
-                  className="max-w-[700px] m-auto brightness-[0.5] relative z-[1]"
+                  className="max-w-[620px] 2xl:max-w-[700px] m-auto brightness-[0.5] relative z-[1]"
                 />
                 <div className="absolute top-0  w-full h-full flex items-center z-[2]">
-                  <div className="flex flex-col justify-between h-[90%] w-full max-w-[650px] m-auto">
+                  <div className="flex flex-col justify-between h-[90%] w-full max-w-[580px] 2xl:max-w-[650px] m-auto">
                     <div className="w-[64px] h-[64px] flex items-center justify-center bg-[var(--secondary)] group-hover:bg-[var(--primary)] rounded-[50%] transition-all duration-500">
                       <Image
                         src={data.icon}
