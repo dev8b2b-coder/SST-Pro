@@ -22,7 +22,7 @@ const Button = ({
       onMouseLeave={() => setLiquidClass(false)}
     >
       <button
-        className={`text-xl xl:text-[23px] px-[24px] 2xl:px-[28px]  py-[7px] 2xl:py-[12px] relative z-[2] rounded-[50px] transition-all duration-500 overflow-hidden  border-[3px] cursor-pointer   ${border_bottom} flex items-center gap-2 ${btn_border
+        className={`text-[15px] md:text-base lg:text-xl xl:text-[23px] px-[20px] lg:px-[24px] 2xl:px-[28px] py-[5px] lg:py-[7px] 2xl:py-[12px] relative z-[2] rounded-[50px] transition-all duration-500 overflow-hidden  border-2 md:border-[3px] cursor-pointer   ${border_bottom} flex items-center gap-2 ${btn_border
           ? btn_border
           : "border-primary"} ${liquidcClass
           ? "text-white "
@@ -38,7 +38,7 @@ const Button = ({
                 alt="arrow"
                 width={1000}
                 height={500}
-                className="max-w-[24px]  transition-all duration-500 "
+                className="max-w-[20px] lg:max-w-[24px]  transition-all duration-500 "
               />
             </div>
           : null}

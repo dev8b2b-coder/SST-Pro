@@ -16,70 +16,41 @@ const footerdata = {
       title: "Products & Solutions",
       pagelinks: [
         // { pagelink: "/", pagename: "About us" },
-        { pagelink: "/contact-us", pagename: "Strategy Workshops" },
-        { pagelink: "/forex", pagename: "AI Analysis Tools Us" },
-        { pagelink: "/indices", pagename: "Personal Mentorship" },
-        { pagelink: "/commodities", pagename: "Portfolio Review" }
+        { pagelink: "/", pagename: "Strategy Workshops" },
+        { pagelink: "/", pagename: "AI Analysis Tools Us" },
+        { pagelink: "/", pagename: "Personal Mentorship" },
+        { pagelink: "/", pagename: "Portfolio Review" }
       ]
     },
     {
       title: "Resources",
       pagelinks: [
-        { pagelink: "/economic-calendar", pagename: "Training Modules" },
-        { pagelink: "/pip-calculator", pagename: "Market Insights" }
+        { pagelink: "/", pagename: "Training Modules" },
+        { pagelink: "/", pagename: "Market Insights" }
       ]
     },
     {
       title: "Contact",
       pagelinks: [
-        { pagelink: "/platform", pagename: "info@sst.pro" },
-        { pagelink: "/platform", pagename: "(555) 123-4567" },
+        { pagelink: "mailto:info@sst.pro", pagename: "info@sst.pro" },
+        { pagelink: "tel:5551234567", pagename: "(555) 123-4567" },
     ]
-    }
-  ],
-  carddata: [
-    {
-      title: "Physical Address",
-      discription:
-        "Giorgi Leonid Ze Street, Tbilisi 0105, <br/> Georgia Office 38.",
-      link: false
-    },
-    {
-      title: "Registered Address",
-      discription:
-        "Ground Floor, The Sotheby <br/> Building, Rodney  Village, Rodney <br/> Bay, Saint Lucia",
-      link: false
-    },
-    {
-      title: "Registration No.",
-      discription: "2025-00621",
-      link: false
-    },
-    {
-      title: "Contact No.",
-      discription: "+41 2650 06818",
-      link: "tel:+41265006818"
-    },
-    {
-      title: "Email",
-      discription: "support@fliptradegroup.com",
-      link: "mailto:support@fliptradegroup.com"
     }
   ],
   social_links: [
     {
       alt: "Facebook",
-      pagelink: "https://www.facebook.com/profile.php?id=61580314210503",
+      pagelink: "",
       icon: facebookicon
     },
     {
       alt: "Instagram",
-      pagelink: "https://www.instagram.com/fliptradegroup/",
+      pagelink: "",
       icon: Instaicon
     },
     {
       alt: "You Tube",
-      pagelink: "https://www.youtube.com/@fliptradegroup",
+      pagelink: "",
       icon: x
     }
   ]
@@ -90,9 +61,9 @@ const Footer = () => {
         <Investment />
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
-          <div className="inn_container pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[150px] rounded-tr-[150px]">
+          <div className="inn_container pt-8 md:pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[70px] md:rounded-tl-[110px]  lg:rounded-tl-[150px]   rounded-tr-[70px]  md:rounded-tr-[110px] lg:rounded-tr-[150px]">
             <div className="px-[1.5%] 2xl:px-[3%]">
-              <div className="hidden md:grid grid-cols-4">
+              <div className="hidden md:grid grid-cols-[3fr_4fr_4fr_4fr] lg:grid-cols-4">
                 <div>
                   <Link href="/">
                     <Image
@@ -100,10 +71,10 @@ const Footer = () => {
                       alt="Logo"
                       width={1000}
                       height={500}
-                      className=" max-w-[64px] lg:max-w-[74px] xl:max-w-[84px]"
+                      className=" max-w-[55px] lg:max-w-[74px] xl:max-w-[84px]"
                     />
                   </Link>
-                  <p className="text-lg xl:text-xl text-white pt-4">
+                  <p className="text-[13px] lg:text-lg xl:text-xl text-white pt-4">
                     Smarter Growth. Financial <br /> Freedom.
                   </p>
                 </div>
@@ -158,12 +129,12 @@ const Footer = () => {
                       alt="Logo"
                       width={1000}
                       height={500}
-                      className="max-w-[180px]"
+                      className="max-w-[70px]"
                     />
                   </Link>
                 </div>
               </div>
-              <div className="pt-12">
+              <div className="pt-6 lg:pt-12">
                 <div className="border-t-[1px] py-6 border-solid border-[#ffffff57] font_secondary flex flex-col-reverse gap-5 lg:gap-0 lg:flex-row items-center lg:justify-between">
                   <div className="flex flex-col lg:flex-row items-center gap-1.5 lg:gap-5">
                     <p className="text-[14px] 2xl:text-base font-light text-[#AAAAAA] font_light">

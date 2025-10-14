@@ -8,6 +8,7 @@ import Whysst from "./Whysst";
 import Aboutsst from "./Aboutsst";
 import Corevalue from "./Corevalue";
 import Faqs from "./Faqs";
+import Bannermobile from "../Uiux/Bannermobile";
 const faqData = [
   {
     question: "What is SST?",
@@ -39,7 +40,13 @@ const faqData = [
 function Homewrap() {
   return (
     <div className="bg-black">
-      <Banner />
+      <div className="hidden md:block">
+        <Banner />
+      </div>
+      <div className="block md:hidden">
+        <Bannermobile />
+      </div>
+
       <Topstock />
       <Currentproject />
       <Trackgroth />

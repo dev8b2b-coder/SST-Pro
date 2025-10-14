@@ -115,7 +115,7 @@ const industries = [
 const Trackgroth = () => {
   return (
     <div>
-      <div className="inn_container pt-24  2xl:pt-32">
+      <div className="inn_container pt-12 md:pt-18 lg:pt-24  2xl:pt-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div   >
             <Title
@@ -136,7 +136,7 @@ const Trackgroth = () => {
           </div>
         </div>
         <div className="pt-18">
-          <div className="grid grid-cols-2 xl:grid-cols-3 gap-6 2xl:gap-12 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 2xl:gap-12 ">
             {industries.map((data, index) =>
               <div className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700" key={index}>
                 <div className="relative max-w-[510px] m-auto">
@@ -147,10 +147,10 @@ const Trackgroth = () => {
                     height={500}
                     className=""
                   />
-                  <Arrowbtn width_height={"w-[65px] 2xl:w-[80px] h-[65px] 2xl:h-[80px]"} />
+                  <Arrowbtn width_height={"w-[50px] md:w-[65px] 2xl:w-[80px] h-[50px] md:h-[65px] 2xl:h-[80px]"} />
                 </div>
                 <div className="max-w-[510px] m-auto pt-8">
-                  <h4 className="text-[30px] gradient_text w-max">
+                  <h4 className="text-2xl lg:text-[30px] gradient_text w-max">
                     {data.title}
                   </h4>
                   <p

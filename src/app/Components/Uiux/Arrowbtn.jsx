@@ -16,7 +16,7 @@ const Arrowbtn = ({ width_height }) => {
               alt="arrow"
               width={1000}
               height={500}
-              className="max-w-[38px]"
+              className="max-w-[24px] md:max-w-[38px]"
             />
           </div>
           <div className="absolute w-full h-full flex justify-center items-center left-[-200px] bottom-[-200px] group-hover:bottom-[0px]   group-hover:left-[0px] transition-all duration-500 z-[2]">
@@ -25,7 +25,7 @@ const Arrowbtn = ({ width_height }) => {
               alt="arrow"
               width={1000}
               height={500}
-              className="max-w-[38px]"
+              className="max-w-[24px] md:max-w-[38px]"
             />
           </div>
         </div>
