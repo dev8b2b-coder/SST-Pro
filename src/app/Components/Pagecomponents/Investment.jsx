@@ -25,7 +25,7 @@ const Investment = () => {
             alt=""
             width={2000}
             height={500}
-            className="max-w-[660px]"
+            className="max-w-[420px] xl:max-w-[520px] 2xl:max-w-[660px]"
           />
         </div>
         <div className="absolute bottom-[-22%] left-[5%]">
@@ -34,17 +34,18 @@ const Investment = () => {
             alt=""
             width={2000}
             height={500}
-            className="max-w-[660px]"
+            className="max-w-[420px] xl:max-w-[520px] 2xl:max-w-[660px]"
           />
         </div>
         <div className="absolute bottom-0 h-full max-h-[483px] w-full grid grid-cols-2">
           <div />
           <div className="flex items-center relative left-[-5%] 2xl:left-0">
-            <div className="pt-12 2xl:pt-0">
+            <div className="pt-20 xl:pt-12 2xl:pt-0">
               <Title
                 title={"Start Your Investment <br/> Journey Today"}
                 color={"text-black"}
                 font_medium={true}
+                border={false}
               />
               <Description
                 description={
@@ -53,8 +54,9 @@ const Investment = () => {
                 color={"text-black"}
                 align={'text-start'}
                 items_start={true}
+                border={false}
               />
-              <div className="flex gap-5 pt-8">
+              <div className="flex gap-5 pt-5 xl:pt-8">
                 <Button
                  btn_name={'Create Account'}
                  btn_background={'bg-[#63818D]'}

@@ -31,8 +31,8 @@ const Aboutsst = () => {
         <div className="grid grid-cols-[2fr_1fr]">
           <div className="flex items-center">
             <div className="w-full">
-              <div className="bg-secondary max-w-5xl flex justify-center items-center py-8">
-                <div className="pe-12 h-full">
+              <div className="bg-secondary max-w-5xl flex justify-center items-center py-4 xl:py-8">
+                <div className="ps-6 xl:ps-0 pe-12 h-full">
                   <Image
                     src={missionblack}
                     alt="icon"
@@ -50,8 +50,8 @@ const Aboutsst = () => {
                   </span>
                 </div>
               </div>
-              <div className="bg-primary max-w-4xl flex justify-center items-center py-8">
-                <div className="pe-12 max-w-[103px]  h-full">
+              <div className="bg-primary max-w-[700px] xl:max-w-4xl flex justify-center items-center py-4 xl:py-8">
+                <div className="ps-6 xl:ps-0 pe-12 xl:max-w-[103px]  h-full">
                   <Image
                     src={visionblack}
                     alt="icon"
@@ -72,7 +72,7 @@ const Aboutsst = () => {
             </div>
           </div>
           <div>
-            <Image src={aboutsst} alt="" width={1000} height={500} className=" max-w-[450px] 2xl:max-w-[540px] mr-auto" />
+            <Image src={aboutsst} alt="" width={1000} height={500} className=" max-w-[320px] xl:max-w-[450px] 2xl:max-w-[540px] mr-auto" />
           </div>
         </div>
       </div>

@@ -53,18 +53,18 @@ const Header = () => {
             alt="Logo"
             width={1000}
             height={500}
-            className="max-w-[62px]"
+            className="max-w-[40px] xl:max-w-[50px] 2xl:max-w-[62px]"
           />
         </div>
         <div className="flex justify-center">
           {headerlinks.map((data, index) =>
             <div
               key={index}
-              className="border-r-2 border-[#4AA1FF4D]  cursor-pointer group py-2 relative z-[2]"
+              className="border-r-2 border-[#4AA1FF4D]  cursor-pointer group py-1 xl:py-2 relative z-[2]"
             >
               <Link href={data.pagelink}>
                 <span
-                  className={` text-xl 2xl:text-[22px] relative z-[2] font_light px-5 ${currentpath ===
+                  className={` text-base xl:text-xl 2xl:text-[22px] relative z-[2] font_light px-3 xl:px-5 ${currentpath ===
                   data.pagelink
                     ? "text-secondary font-semibold"
                     : "text-white font-medium"}`}

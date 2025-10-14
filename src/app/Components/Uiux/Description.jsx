@@ -7,7 +7,7 @@ const Description = ({
   color,
   align,
   items_start,
-  border_none
+  border,
 }) => {
   useEffect(() => {
     AOS.init({
@@ -16,14 +16,14 @@ const Description = ({
   }, []);
   return (
     <div
-      className={`flex flex-col ${items_start ? " " : "items-end"} `}
+      className={`flex flex-col justify-center items-center ${items_start ? " " : "lg:items-end"} `}
       data-aos="fade-up"
     >
       <p
-        className={` ${color} ${align} main_description pb-4 font_light`}
+        className={` ${color} text-center lg:${align} main_description pb-4 font_light`}
         dangerouslySetInnerHTML={{ __html: description }}
       />
-      {border_none
+      {border === false
         ? null
         : <div
             className="border-b-2 mt-[-8px] border-[#FFFFFF80]"

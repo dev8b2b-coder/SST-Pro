@@ -6,15 +6,15 @@ const Corevalue = () => {
   return (
     <div>
       <div className="inn_container pt-18">
-        <div className="flex items-center gap-3 w-max m-auto shadow-[inset_0px_0px_20px_20px_#4aa1ff54] py-[32px] px-[60px] rounded-[70px] cursor-pointer">
+        <div className="flex items-center gap-3 w-max m-auto shadow-[inset_0px_0px_20px_20px_#4aa1ff54] py-[24px] xl:py-[32px] px-[50px] 2xl:px-[60px] rounded-[70px] cursor-pointer">
           <Image
             src={handshake}
             alt=""
             width={1000}
             height={500}
-            className="max-w-[60px]"
+            className="max-w-[50px] xl:max-w-[60px]"
           />
-          <p className="text-[40px] gradient_text">CORE VALUES</p>
+          <p className="text-[32px] xl:text-[40px] gradient_text">CORE VALUES</p>
         </div>
 
         <div className="pb-24">
@@ -24,7 +24,7 @@ const Corevalue = () => {
               alt="corevalue"
               width={1000}
               height={500}
-              className="max-w-[400px] m-auto"
+              className="max-w-[470px] xl:max-w-[400px] m-auto invisible xl:visible"
             />
 
             <div className="absolute top-[13%] left-[6%] 2xl:left-[10%] max-w-[430px] w-full text-center">

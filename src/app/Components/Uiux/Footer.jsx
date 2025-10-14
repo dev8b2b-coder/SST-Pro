@@ -91,7 +91,7 @@ const Footer = () => {
       <div className=" pt-12 ">
         <div className="bg-cover bg-no-repeat">
           <div className="inn_container pt-18 px-24  shadow-[inset_0px_20px_20px_-20px_#0074f2] rounded-tl-[150px] rounded-tr-[150px]">
-            <div className="2xl:px-[3%]">
+            <div className="px-[1.5%] 2xl:px-[3%]">
               <div className="hidden md:grid grid-cols-4">
                 <div>
                   <Link href="/">
@@ -100,10 +100,10 @@ const Footer = () => {
                       alt="Logo"
                       width={1000}
                       height={500}
-                      className="max-w-[84px]"
+                      className=" max-w-[64px] lg:max-w-[74px] xl:max-w-[84px]"
                     />
                   </Link>
-                  <p className="text-xl text-white pt-4">
+                  <p className="text-lg xl:text-xl text-white pt-4">
                     Smarter Growth. Financial <br /> Freedom.
                   </p>
                 </div>

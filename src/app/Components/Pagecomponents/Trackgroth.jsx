@@ -136,7 +136,7 @@ const Trackgroth = () => {
           </div>
         </div>
         <div className="pt-18">
-          <div className="grid grid-cols-3 gap-12 ">
+          <div className="grid grid-cols-2 xl:grid-cols-3 gap-6 2xl:gap-12 ">
             {industries.map((data, index) =>
               <div className="p-4 gradient_border group rounded-[50px] cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700" key={index}>
                 <div className="relative max-w-[510px] m-auto">

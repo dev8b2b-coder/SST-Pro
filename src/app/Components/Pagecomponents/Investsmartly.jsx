@@ -35,7 +35,7 @@ const Investsmartly = () => {
             className="max-w-[550px] 2xl:max-w-[675px] m-auto"
           />
           <div className="text-end absolute top-[5%] left-[20%] fade_up invest_card1"  data-aos="fade-up">
-            <p className="text-[25px] text-primary pb-3">
+            <p className="text-[22px] xl:text-[25px] text-primary pb-3">
               Portfolio Building Tips
             </p>
             <span className="sub_description text-ternary ">
@@ -44,7 +44,7 @@ const Investsmartly = () => {
             </span>
           </div>
           <div className="text-end absolute bottom-[28%] left-[8%] invest_card2"  data-aos="fade-up">
-            <p className="text-[25px] text-primary pb-3">
+            <p className="text-[22px] xl:text-[25px] text-primary pb-3">
               Step-by-Step Investment Tutorials
             </p>
             <span className="sub_description text-ternary ">
@@ -53,7 +53,7 @@ const Investsmartly = () => {
             </span>
           </div>
           <div className="text-start absolute bottom-[25%] right-[17%] invest_card3"  data-aos="fade-up">
-            <p className="text-[25px] text-primary pb-3">
+            <p className="text-[22px] xl:text-[25px] text-primary pb-3">
               Risk Management Guidance
             </p>
             <span className="sub_description text-ternary ">

@@ -18,7 +18,7 @@ const Banner = () => {
   return (
     <div>
       <div className="banner_container ">
-        <div className="relative pt-6 2xl:pt-4">
+        <div className="relative pt-[30px] xl:pt-[26px] 2xl:pt-4">
           <Image
             src={Bannerposter}
             alt=""
@@ -30,7 +30,7 @@ const Banner = () => {
             <div className="relative">
               <div>
                 <h1
-                  className="text-[75px] 2xl:text-[95px] text-center"
+                  className="text-[60px] xl:text-[75px] 2xl:text-[95px] text-center"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -63,7 +63,7 @@ const Banner = () => {
                   color={"text-[#D0D0D0]"}
                   align={"text-center"}
                   items_start={true}
-                  border_none={true}
+                  border={false}
                 />
 
                 <div className="flex items-start justify-center">
@@ -95,7 +95,7 @@ const Banner = () => {
                   alt="$"
                   width={2000}
                   height={500}
-                  className="max-w-[250px] 2xl:max-w-[330px] flip_loop"
+                  className="max-w-[180px] xl:max-w-[250px] 2xl:max-w-[330px] flip_loop"
                 />
               </div>
               <div className="absolute top-[56%] right-[7%]">
@@ -105,39 +105,45 @@ const Banner = () => {
                     alt="$"
                     width={5000}
                     height={500}
-                    className="max-w-[275px] 2xl:max-w-[366px]"
+                    className="max-w-[180px] xl:max-w-[275px] 2xl:max-w-[366px]"
                   />
                   <p className="absolute w-full text-center bottom-[-10px] text-[24px] 2xl:text-[28px] text-white">
                     Secure ROI
                   </p>
                 </div>
               </div>
-              <div className="absolute top-[-2%]"
-                data-aos="fade-up" data-aos-duration="1600"
+              <div
+                className="absolute top-[-2%]"
+                data-aos="fade-up"
+                data-aos-duration="1600"
               >
                 <Image
                   src={bannersignleft}
                   alt="#"
                   width={2000}
                   height={500}
-                  className="max-w-[130px] 2xl:max-w-[170px]"
+                  className="max-w-[80px] xl:max-w-[130px] 2xl:max-w-[170px]"
                 />
               </div>
-              <div className="absolute right-0 top-[-15%]"
-               data-aos="fade-down" data-aos-duration="1600"
-               >
+              <div
+                className="absolute right-0 top-[-15%]"
+                data-aos="fade-down"
+                data-aos-duration="1600"
+              >
                 <Image
                   src={bannersignright}
                   alt="#"
                   width={2000}
                   height={500}
-                  className="max-w-[130px] 2xl:max-w-[170px]"
+                  className="max-w-[80px] xl:max-w-[130px] 2xl:max-w-[170px]"
                 />
               </div>
             </div>
           </div>
-          <div className="absolute bottom-0 ps-6"
-           data-aos="fade-up" data-aos-duration="1600"
+          <div
+            className="absolute bottom-0 ps-6"
+            data-aos="fade-up"
+            data-aos-duration="1600"
           >
             <Image
               src={bannergraph}
