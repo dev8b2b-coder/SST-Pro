@@ -30,7 +30,7 @@ const Banner = () => {
             <div className="relative">
               <div>
                 <h1
-                  className="text-[60px] xl:text-[75px] 2xl:text-[95px] text-center"
+                  className="text-[50px] leading-[normal] lg:text-[60px] xl:text-[75px] 2xl:text-[95px] text-center px-40 lg:px-0"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
@@ -61,13 +61,13 @@ const Banner = () => {
                     "Where Trust Meets Technology — Powering the Next Generation <br/> of Trading and Investment."
                   }
                   color={"text-[#D0D0D0]"}
-                  align={"text-center"}
+                  align={"text-center px-40 lg:px-0"}
                   items_start={true}
                   border={false}
                 />
 
                 <div className="flex items-start justify-center">
-                  <div className="flex justify-center gap-6 pt-6">
+                  <div className="flex justify-center gap-6 lg:pt-6">
                     <div data-aos="fade-up" data-aos-duration="1400">
                       <Button
                         btn_name={"Get Started"}
@@ -89,25 +89,25 @@ const Banner = () => {
                   </div>
                 </div>
               </div>
-              <div className="absolute top-[55%] left-[13%]">
+              <div className="absolute top-[38%] lg:top-[55%] left-[7%] lg:left-[13%]">
                 <Image
                   src={bannerdollar}
                   alt="$"
                   width={2000}
                   height={500}
-                  className="max-w-[180px] xl:max-w-[250px] 2xl:max-w-[330px] flip_loop"
+                  className="max-w-[130px] lg:max-w-[180px] xl:max-w-[250px] 2xl:max-w-[330px] flip_loop"
                 />
               </div>
-              <div className="absolute top-[56%] right-[7%]">
+              <div className="absolute top-[35%] lg:top-[56%] right-[4%] lg:right-[7%]">
                 <div className="relative">
                   <Image
                     src={bannerpersentgrafh}
                     alt="$"
                     width={5000}
                     height={500}
-                    className="max-w-[180px] xl:max-w-[275px] 2xl:max-w-[366px]"
+                    className="max-w-[140px] lg:max-w-[180px] xl:max-w-[275px] 2xl:max-w-[366px]"
                   />
-                  <p className="absolute w-full text-center bottom-[-10px] text-[24px] 2xl:text-[28px] text-white">
+                  <p className="absolute w-full text-center bottom-[-10px] text-[14px] lg:text-xl xl:text-[24px] 2xl:text-[28px] text-white">
                     Secure ROI
                   </p>
                 </div>
@@ -122,7 +122,7 @@ const Banner = () => {
                   alt="#"
                   width={2000}
                   height={500}
-                  className="max-w-[80px] xl:max-w-[130px] 2xl:max-w-[170px]"
+                  className="max-w-[60px] lg:max-w-[80px] xl:max-w-[130px] 2xl:max-w-[170px]"
                 />
               </div>
               <div
@@ -135,7 +135,7 @@ const Banner = () => {
                   alt="#"
                   width={2000}
                   height={500}
-                  className="max-w-[80px] xl:max-w-[130px] 2xl:max-w-[170px]"
+                  className="max-w-[60px] lg:max-w-[80px] xl:max-w-[130px] 2xl:max-w-[170px]"
                 />
               </div>
             </div>

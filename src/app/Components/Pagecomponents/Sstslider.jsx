@@ -24,13 +24,13 @@ const Sstslider = ({ sliderdata }) => {
     <div className="max-w-[1490px] m-auto">
       <Swiper
         loop
-        autoplay={{ delay: 2000 }}
+        // autoplay={{ delay: 2000 }}
         speed={1000}
         slidesPerView={slideitem}
         pagination={{ clickable: true }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="h-[425px] xl:h-[475px]"
+        className="lg:h-[425px] xl:h-[475px]"
       >
         {sliderdata.map((data, index) => {
           return (
@@ -45,17 +45,17 @@ const Sstslider = ({ sliderdata }) => {
                 />
                 <div className="absolute top-0  w-full h-full flex items-center z-[1] ">
                   <div className="flex flex-col justify-between h-[90%] w-full  max-w-[85%] xl:max-w-[540px] 2xl:max-w-[650px] m-auto">
-                    <div className="w-[64px] h-[64px] flex items-center justify-center group-hover:bg-[var(--primary)] bg-[var(--secondary)] rounded-[50%]">
+                    <div className="w-[40px] md:w-[64px] h-[40px] md:h-[64px] flex items-center justify-center group-hover:bg-[var(--primary)] bg-[var(--secondary)] rounded-[50%]">
                       <Image
                         src={data.icon}
                         alt="icon"
                         width={1000}
                         height={500}
-                        className="max-w-[34px]"
+                        className="max-w-[24px] md:max-w-[34px]"
                       />
                     </div>
                     <div className="max-w-[85%] xl:max-w-[unset]">
-                      <p className="text-[25px] gradient_text pb-2">
+                      <p className="text-[22px] md:text-[25px] gradient_text md:pb-2">
                         {data.title}
                       </p>
                       <span className="sub_description text-white ">
@@ -64,7 +64,7 @@ const Sstslider = ({ sliderdata }) => {
                     </div>
                   </div>
                 </div>
-                <Arrowbtn width_height={" w-[55px] xl:w-[75px] h-[55px] xl:h-[75px] "} />
+                <Arrowbtn width_height={" w-[45px] md:w-[90px] lg:w-[55px] xl:w-[75px] h-[45px] md:h-[90px] lg:h-[55px] xl:h-[75px] "} />
               </div>
             </SwiperSlide>
           );

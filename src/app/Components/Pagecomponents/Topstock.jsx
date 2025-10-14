@@ -53,7 +53,7 @@ const stockCards = [
 
 function Topstock() {
   return (
-    <div className="pt-24  2xl:pt-32">
+    <div className="pt-12 md:pt-18 lg:pt-24  2xl:pt-32">
       <div className="inn_container">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
           <div   >
@@ -79,23 +79,23 @@ function Topstock() {
         <Marquee pauseOnHover={true}>
           {stockCards.map((data, index) =>
             <div key={index} className="mx-3 py-6">
-              <div className="min-w-[415px] w-full border-2 border-[#b5d9d774] p-[35px] 2xl:p-[40px] bg-cover bg-no-repeat bg-[radial-gradient(circle,rgba(11,13,15,1)_0%,rgba(35,36,37,1)_100%)] rounded-[45px] transition-all duration-500 hover:scale-[1.03] hover:shadow-[-1px_0px_20px_7px_#ffffff63]">
+              <div className="min-w-[350px] md:min-w-[415px] w-full border-2 border-[#b5d9d774] p-[35px] 2xl:p-[40px] bg-cover bg-no-repeat bg-[radial-gradient(circle,rgba(11,13,15,1)_0%,rgba(35,36,37,1)_100%)] rounded-[45px] transition-all duration-500 hover:scale-[1.03] hover:shadow-[-1px_0px_20px_7px_#ffffff63]">
                 <p className="text-[#898989] textxl">
                   {data.cardsub_name}
                 </p>
                 <p
-                  className={` text-[32px] 2xl:text-[40px] font-semibold ${data.gainloss < 0
+                  className={`text-[24px] lg:text-[32px] 2xl:text-[40px] font-semibold ${data.gainloss < 0
                     ? "text-[#DC3545]"
                     : "text-[#28A745]"}`}
                 >
                   {data.name}
                 </p>
-                <p className="text-white text-[40px] 2x:text-[50px] pb-4 border-b-[2px] border-[#FFFFFF33] font-bold">
+                <p className="text-white text-[32px] lg:text-[40px] 2x:text-[50px] pb-2 lg:pb-4 border-b-[2px] border-[#FFFFFF33] font-bold">
                   {" "}{data.price}{" "}
                 </p>
                 <div className="pt-3 flex justify-between">
                   <span
-                    className={` text-xl flex items-center gap-2 ${data.gainloss <
+                    className={` text-base xl:text-xl flex items-center gap-2 ${data.gainloss <
                     0
                       ? "text-[#DC3545]"
                       : "text-[#28A745]"}`}
@@ -117,7 +117,7 @@ function Topstock() {
                         />}
                     {data.gainloss}%
                   </span>
-                  <span className="text-[#898989] text-xl">
+                  <span className="text-[#898989] text-base xl:text-xl">
                     {data.volumn}
                   </span>
                 </div>
@@ -127,7 +127,7 @@ function Topstock() {
         </Marquee>
       </div>
       <div className="inn_container pt-12">
-        <div className=" flex justify-end">
+        <div className=" flex justify-center md:justify-end">
           <Button btn_name=" View All Stocks" color="text-black" btn_background="bg-primary" />
         </div>
       </div>
