@@ -38,7 +38,7 @@ const headerlinks = [
   {
     id: 6,
     pagename: "Contact",
-    pagelink: "/contact"
+    pagelink: "/contact-us"
   }
 ];
 
