@@ -7,6 +7,7 @@ import Button from "./Button";
 import { usePathname } from "next/navigation";
 import Headerbg from "../../../../public/banners/Headerbg.webp";
 import menu from "../../../../public/icons/menu.svg";
+import cross from "../../../../public/icons/cross.svg";
 import callicon from "../../../../public/icons/callicon.svg";
 const headerlinks = [
   {
@@ -55,11 +56,11 @@ const Header = () => {
         >
           <div className="block md:hidden" onClick={() => setMenu(!Menu)}>
             <Image
-              src={menu}
+              src={Menu ? cross : menu}
               alt="menu icon"
               width={1000}
               height={500}
-              className="max-w-[38px] z-[3] relative"
+              className={`max-w-[38px] z-[3] relative`}
             />
           </div>
           <div className="2xl:min-w-[185px]">
@@ -107,7 +108,7 @@ const Header = () => {
             </div>
             <div className="block lg:hidden" onClick={() => setMenu(!Menu)}>
               <Image
-                src={menu}
+                src={Menu ? cross : menu}
                 alt="menu icon"
                 width={1000}
                 height={500}
