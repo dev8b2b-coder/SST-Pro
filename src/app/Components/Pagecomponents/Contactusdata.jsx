@@ -64,7 +64,7 @@ const Contactusdata = () => {
 
         <div className="pt-18">
           {/* keep same grid + card classes as your Trackgroth component */}
-          <div className="grid grid-cols-2 xl:grid-cols-4 gap-6 2xl:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 2xl:gap-12">
             {contacts.map((item, idx) => (
               <div
                 key={idx}
