@@ -56,7 +56,8 @@ const Banner = () => {
                     {" "}Transparent
                   </span>
                 </h1>
-                <Description
+                <div className="main_banne_des">
+                   <Description
                   description={
                     "Where Trust Meets Technology — Powering the Next Generation <br/> of Trading and Investment."
                   }
@@ -65,6 +66,7 @@ const Banner = () => {
                   items_start={true}
                   border={false}
                 />
+                </div>
 
                 <div className="flex items-start justify-center">
                   <div className="flex justify-center gap-6 lg:pt-6">

@@ -98,13 +98,15 @@ const Header = () => {
           </div>
           <div className="hidden md:flex items-center gap-4 lg:gap-0">
             <div className="relative z-[2]">
-              <Button
-                btn_name={"Sign Up"}
-                btn_background={"gradient_bg"}
-                btn_border={"border-transparent"}
-                color={"text-black"}
-                icon={true}
-              />
+              <Link href={"https://clients.sst.pro/register"}>
+                <Button
+                  btn_name={"Sign Up"}
+                  btn_background={"gradient_bg"}
+                  btn_border={"border-transparent"}
+                  color={"text-black"}
+                  icon={true}
+                />
+              </Link>
             </div>
             <div className="block lg:hidden" onClick={() => setMenu(!Menu)}>
               <Image
@@ -145,13 +147,15 @@ const Header = () => {
                 </div>
               )}
               <div className="mt-5 block md:hidden">
-                <Button
-                  btn_name={"Sign Up"}
-                  btn_background={"gradient_bg"}
-                  btn_border={"border-transparent"}
-                  color={"text-black"}
-                  icon={true}
-                />
+                <Link href={"https://clients.sst.pro/register"}>
+                  <Button
+                    btn_name={"Sign Up"}
+                    btn_background={"gradient_bg"}
+                    btn_border={"border-transparent"}
+                    color={"text-black"}
+                    icon={true}
+                  />
+                </Link>
               </div>
             </div>
           </div>

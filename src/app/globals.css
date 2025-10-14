@@ -205,6 +205,9 @@ body {
   .main_description br {
     display: none;
   }
+  .main_banne_des br {
+    display: block !important;
+  }
 }
 
 @media screen and (max-width: 1440px) {
@@ -273,6 +276,9 @@ body {
   .main_title {
     font-size: 34px;
     line-height: 44px;
+  }
+    .main_banne_des br {
+    display: none !important;
   }
 }
 
