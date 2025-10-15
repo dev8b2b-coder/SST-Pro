@@ -1,90 +1,69 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
- 
+
 export async function POST(req) {
   try {
-    const { name, email, message } = await req.json();
- 
-    if (!firstName ||!lastName || !email || !message) {
+    const { firstName, lastName, email, message } = await req.json();
+
+    if (!firstName || !lastName || !email || !message) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
       );
     }
- 
+
+    const fullName = `${firstName} ${lastName}`;
+
     const transporter = nodemailer.createTransport({
       host: process.env.EMAIL_HOST,
       port: Number(process.env.EMAIL_PORT),
-      secure: true, // true if using 465
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD
+        pass: process.env.EMAIL_PASSWORD,
       },
-      tls: { rejectUnauthorized: false }
+      tls: { rejectUnauthorized: false },
     });
- 
-    // 1) Send to Admin (your email)
+
+
     await transporter.sendMail({
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // your inbox
-      subject: `You’ve just received a new lead on Flip Trade Group`,
-      text: `You received a new message:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      to: process.env.EMAIL_USER,
+      subject: `New Inquiry from SST Pro Group`,
+      text: `Name: ${fullName}\nEmail: ${email}\nMessage: ${message}`,
       html: `
-       <div>
-        <h2>Here are the details submitted:</h2>
-        <h3><strong>Name:</strong> ${name}</h3>
-        <h3><strong>Email:</strong> ${email}</h3>
-        <h3><strong>Message:</strong> ${message}</h3>
-       
- 
         <div>
-           <h3>
-             Please follow up at the earliest to ensure a smooth onboarding experience.
-           <h3>
-           <h3>
-             Flip Trade Group System Notification
-           </h3>
-        </div>
-        </div>
-      `
-    });
- 
-    // 2) Send Thank You email to User
-    await transporter.sendMail({
-      from: process.env.EMAIL_USER,
-      to: email,
-      subject: "We’ve Received Your Request ",
-      text: `Hi ${name},`,
-      html: `
-      <div>
-       <h3>
-          Hi <strong> ${name} </strong> Thank you for reaching out to <strong> Flip Trade Group </strong>
-        </h3>
-        <h3>
-          Your request has been received, and one of our experts will connect with you shortly to guide you through the next steps.
-        </h3>
-        <h3>
-        At FlipTrade, we value transparency, security, and support — so you can feel confident that you’re in safe hands.
-        </h3?
- 
-          <div>
-             <h3>
-               Best regards,
-             </h3>
-             <h3>
-               Team FlipTrade
-             </h3>
-          </div>
+          <h2>New Inquiry Received</h2>
+          <p><strong>Name:</strong> ${fullName}</p>
+          <p><strong>Email:</strong> ${email}</p>
+          <p><strong>Message:</strong> ${message}</p>
+          <hr />
+          <p>Please follow up at the earliest to ensure a smooth onboarding experience.</p>
+          <p>SST Pro  Group System Notification</p>
         </div>
       `,
     });
- 
+
+    // 2. Send thank-you email to user
+    await transporter.sendMail({
+      from: process.env.EMAIL_USER,
+      to: email,
+      subject: "We’ve Received Your Request",
+      text: `Hi ${firstName}, thank you for contacting SST Pro Group.`,
+      html: `
+        <div>
+          <p>Hi <strong>${firstName}</strong>,</p>
+          <p>Thank you for reaching out to <strong>SST Pro</strong>.</p>
+          <p>Your request has been received. One of our experts will connect with you shortly.</p>
+          <br/>
+          <p>Best regards,<br/>Team SST Pro</p>
+        </div>
+      `,
+    });
+
     return NextResponse.json({ ok: true });
   } catch (error) {
     console.error("Email send error:", error);
-    return NextResponse.json(
-      { error: "Failed to send email" },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: `Failed to send email: ${error.message}` }, { status: 500 });
   }
 }

@@ -1,10 +1,11 @@
 import React from 'react'
-import Aboutusbanner from '../Components/Pagecomponents/Aboutusbannee'
-import AboutCardSection from '../Components/Pagecomponents/AboutCardSection'
-import Faqs from '../Components/Pagecomponents/Faqs';
-import Corevalue from '../Components/Pagecomponents/Corevalue';
-import Aboutsstpro from '../Components/Pagecomponents/Aboutsstpro';
-import Aboutdata from '../Components/Pagecomponents/Aboutdata';
+import Forexbanner from '../Components/Pagecomponents/Forexbanner'
+import TopForex from '../Components/Pagecomponents/TopForex'
+import ForexData from '../Components/Pagecomponents/ForexData'
+import ForexInvestement from '../Components/Pagecomponents/ForexInvestment'
+import ForexWorks from '../Components/Pagecomponents/ForexWorks'
+import Faqs from '../Components/Pagecomponents/Faqs'
+// import ForexInvestement from '../Components/Pagecomponents/ForexInvestment'
 const faqData = [
   {
     question: "What is SST?",
@@ -35,12 +36,11 @@ const faqData = [
 const page = () => {
   return (
     <div>
-        <Aboutusbanner/>
-        <Aboutsstpro/>
-        <Aboutdata/>
-        {/* <AboutChoose/> */}
-        <AboutCardSection/>    
-        <Corevalue />
+        <Forexbanner/>
+        <TopForex/>
+        <ForexData/>
+        <ForexInvestement/>
+        <ForexWorks/>
          <Faqs faqData={faqData} />
     </div>
   )

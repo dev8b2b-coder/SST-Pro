@@ -11,6 +11,7 @@ import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 const Banner = () => {
   useEffect(() => {
     AOS.init();
@@ -71,6 +72,7 @@ const Banner = () => {
                 <div className="flex items-start justify-center">
                   <div className="flex justify-center gap-6 lg:pt-6">
                     <div data-aos="fade-up" data-aos-duration="1400">
+                       <Link href={"https://clients.sst.pro/register"}>
                       <Button
                         btn_name={"Get Started"}
                         btn_background={"bg-transparent"}
@@ -78,6 +80,7 @@ const Banner = () => {
                         color={"text-white"}
                         border_bottom={"border-b-0"}
                       />
+                      </Link>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1600">
                       <Button
@@ -147,13 +150,13 @@ const Banner = () => {
             data-aos="fade-up"
             data-aos-duration="1600"
           >
-            <Image
+            {/* <Image
               src={bannergraph}
               alt="bannergraph"
               width={5000}
               height={500}
               className="w-full"
-            />
+            /> */}
           </div>
         </div>
       </div>
