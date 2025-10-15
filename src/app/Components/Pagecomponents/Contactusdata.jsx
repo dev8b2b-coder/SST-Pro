@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Title from "../Uiux/Title";
-import Description from "../Uiux/Description";
 import Link from "next/link";
 import { MessageSquare, Bell, MapPin, Phone } from "lucide-react";
 
@@ -52,13 +51,13 @@ const Contactusdata = () => {
             />
           </div>
           <div>
-            <Description
+            {/* <Description
               description={
                 "Questions, quotes, or support—reach the right team instantly."
               }
               color={"text-white"}
               align={"text-end"}
-            />
+            /> */}
           </div>
         </div>
 

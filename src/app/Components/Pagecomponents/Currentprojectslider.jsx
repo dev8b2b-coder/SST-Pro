@@ -10,6 +10,8 @@ import currencycheck from "../../../../public/icons/currencycheck.svg";
 import cardbanner1 from "../../../../public/images/trackcard1.webp";
 import cardbanner2 from "../../../../public/images/trackcard2.webp";
 import Arrowbtn from "../Uiux/Arrowbtn";
+import { useRouter } from "next/navigation";
+
 
 const industries = [
   {
@@ -17,7 +19,8 @@ const industries = [
     title: "Forex Trading",
     description:
       "Navigate global currencies with <br/> precision and smart strategies.",
-    icon: currencycheck
+    icon: currencycheck,
+    route: "/forex",
   },
   {
     image: cardbanner2,
@@ -29,6 +32,7 @@ const industries = [
 ];
 const Currentprojectslider = () => {
   const [slideitem, setSlideItem] = useState(2);
+    const router = useRouter();
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1024) setSlideItem(1);
@@ -50,7 +54,7 @@ const Currentprojectslider = () => {
         {industries.map((data, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="relative max-w-[95%] xl:max-w-[580px] 2xl:max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
+              <div onClick={() => router.push(data.route)} className="relative max-w-[95%] xl:max-w-[580px] 2xl:max-w-[700px] m-auto group cursor-pointer hover:shadow-[-4px_4px_4px_#ffffff99] hover:scale-[1.02] transition-all duration-700 rounded-4xl">
                 <Image
                   src={data.image}
                   alt={data.title}

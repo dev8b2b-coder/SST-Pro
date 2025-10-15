@@ -91,7 +91,7 @@ const Footer = () => {
               </div>
 
               <div className="flex md:hidden flex-col-reverse">
-                <div className="grid grid-cols-2 lg:grid-cols-1 py-6">
+                <div className="grid grid-cols-2 gap-x-8 gap-y-6 py-6">
                   {footerdata.linkingdata.slice(0,1).map((data, index) =>
                     <div
                       className={`${index === 2

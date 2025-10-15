@@ -1,14 +1,13 @@
-"use client";
-import Image from "next/image";
-import React from "react";
+import React from 'react'
 import Bannerposter from ".././../../../public/banners/Banner.webp";
 import bannersignleft from "../../../../public/images/bannersignleft.webp";
 import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
+import Image from 'next/image';
 
-const AboutUsBanner = () => {
+const Forexbanner = () => {
   return (
-    <div>
+  <div>
       <div className="banner_container">
         {/* Banner container with responsive height */}
         <div className="relative pt-[30px] xl:pt-[26px] 2xl:pt-4 h-[650px] sm:h-[600px] md:h-[550px] lg:h-[500px]">
@@ -29,7 +28,11 @@ const AboutUsBanner = () => {
                   data-aos="fade-up"
                   data-aos-duration="1000"
                 >
-                  <span className="gradient_text" data-aos="fade-up" data-aos-duration="1000"> About </span>
+                  <span className="gradient_text" data-aos="fade-up" data-aos-duration="1000"> Forex </span>
+                  <span className="gradient_text" data-aos="fade-up" data-aos-duration="1200"> Trading </span>
+                  <span className="gradient_text" data-aos="fade-up" data-aos-duration="1200"> Investment </span>
+                  <br />
+                  <span className="gradient_text" data-aos="fade-up" data-aos-duration="1200"> with </span>
                   <span className="gradient_text" data-aos="fade-up" data-aos-duration="1200"> SST </span>
                   <span className="gradient_text" data-aos="fade-up" data-aos-duration="1200"> Pro </span>
                 </h1>
@@ -72,7 +75,7 @@ const AboutUsBanner = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutUsBanner;
+export default Forexbanner
