@@ -10,13 +10,13 @@ const Forexbanner = () => {
   <div>
       <div className="banner_container">
         {/* Banner container with responsive height */}
-        <div className="relative pt-[30px] xl:pt-[26px] 2xl:pt-4 h-[650px] sm:h-[600px] md:h-[550px] lg:h-[500px]">
+        <div className="relative pt-[30px] xl:pt-[26px] 2xl:pt-4">
           <Image
             src={Bannerposter}
             alt=""
             width={10000}
             height={500}
-            className="w-full h-full object-cover"
+            className="w-full"
           />
 
           {/* Content inside banner */}
