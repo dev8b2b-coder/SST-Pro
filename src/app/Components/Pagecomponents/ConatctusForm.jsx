@@ -140,7 +140,7 @@ const ConatctusForm = () => {
                     placeholder: "Leave us a message...",
                   },
                 ]}
-                thankYouRoute="/thank-you"
+                thankYouRoute="/"
                 submitUrl="/api/send-email"
               />
             </div>

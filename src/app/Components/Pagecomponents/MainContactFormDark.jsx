@@ -6,7 +6,7 @@ import Button from "../Uiux/Button";
 export default function MainContactFormDark({
   fields = [],
   submitUrl = "/api/send-email",
-  thankYouRoute = "/thank-you",
+  thankYouRoute = "/",
 }) {
   const initial = fields.reduce((acc, f) => ({ ...acc, [f.name]: "" }), {});
   const [form, setForm] = useState(initial);
@@ -46,6 +46,7 @@ export default function MainContactFormDark({
       });
       const data = await res.json();
       if (data?.ok) {
+        console.log(data,"data")
         router.push(thankYouRoute);
         setForm(initial);
       } else {

@@ -18,8 +18,8 @@ const contacts=[
     icon: <Bell className="w-5 h-5 text-white" />,
     heading: "Chat to support",
     subtext: "We're here to help.",
-    actionText: "support@untitledui.com",
-    href: "mailto:support@untitledui.com",
+    actionText: "dev8b2b@gmail.com",
+    href: "mailto:info@sst.pro",
   },
   {
     icon: <MapPin className="w-5 h-5 text-white" />,
@@ -85,12 +85,13 @@ const Contactusdata = () => {
                     {item.subtext}
                   </p>
 
-                  <Link
-                    href={item.href}
-                    className="inline-block mt-2 underline text-white"
-                  >
-                    {item.actionText}
-                  </Link>
+                 <a
+  href={item.href}
+  className="inline-block mt-2 underline text-white"
+>
+  {item.actionText}
+</a>
+
                 </div>
               </div>
             ))}
