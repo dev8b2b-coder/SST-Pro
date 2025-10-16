@@ -22,7 +22,7 @@ const Aboutsst = () => {
                 "Established 2 years ago, SST Pro has been dedicated to helping <br/> clients achieve smarter growth and financial freedom."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

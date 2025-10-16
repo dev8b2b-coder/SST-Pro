@@ -65,7 +65,7 @@ const AboutChoose=()=> {
             <Description
               description="The smarter, safer, and more transparent way to invest."
               color="text-white"
-              align="text-end"
+              align="lg:text-end"
             />
           </div>
         </div>

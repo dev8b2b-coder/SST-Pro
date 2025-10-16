@@ -22,7 +22,7 @@ const Investsmartly = () => {
                 "We guide you through financial literacy, investing <br/> strategies, and market insights."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

@@ -28,7 +28,7 @@ const Faqs = ({faqData}) => {
                 "Get quick answers to the most common <br /> questions about SST."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

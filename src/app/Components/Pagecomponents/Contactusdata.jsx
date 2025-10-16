@@ -21,6 +21,7 @@ const contacts=[
     actionText: "dev8b2b@gmail.com",
     href: "mailto:info@sst.pro",
   },
+  
   {
     icon: <MapPin className="w-5 h-5 text-white" />,
     heading: "Visit us",
@@ -56,7 +57,7 @@ const Contactusdata = () => {
                 "Questions, quotes, or support—reach the right team instantly."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             /> */}
           </div>
         </div>

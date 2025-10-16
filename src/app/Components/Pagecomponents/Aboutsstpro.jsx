@@ -25,7 +25,7 @@ const Aboutsstpro = () => {
                 "Founded in 2025, SST Pro Ltd is a licensed global investment company <br/> specializing in Forex, Real Estate, and diversified financial markets.."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>
