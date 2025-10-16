@@ -23,17 +23,17 @@ const headerlinks = [
   {
     id: 3,
     pagename: "Services",
-    pagelink: "/services"
+    pagelink: "/"
   },
   {
     id: 4,
     pagename: "Markets",
-    pagelink: "/markets"
+    pagelink: "/"
   },
   {
     id: 5,
     pagename: "Security",
-    pagelink: "/security"
+    pagelink: "/"
   },
   {
     id: 6,

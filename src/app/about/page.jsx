@@ -1,10 +1,11 @@
-import React from 'react'
-import Aboutusbanner from '../Components/Pagecomponents/Aboutusbannee'
-import Faqs from '../Components/Pagecomponents/Faqs';
-import Corevalue from '../Components/Pagecomponents/Corevalue';
-import Aboutsstpro from '../Components/Pagecomponents/Aboutsstpro';
-import Aboutdata from '../Components/Pagecomponents/Aboutdata';
-import AboutChoose from '../Components/Pagecomponents/AboutChoose';
+import React from "react";
+import Faqs from "../Components/Pagecomponents/Faqs";
+import Corevalue from "../Components/Pagecomponents/Corevalue";
+import Aboutsstpro from "../Components/Pagecomponents/Aboutsstpro";
+import Aboutdata from "../Components/Pagecomponents/Aboutdata";
+import AboutChoose from "../Components/Pagecomponents/AboutChoose";
+import Dynamicbanner from "../Components/Pagecomponents/Dynamicbanner";
+import Vision from "../Components/Pagecomponents/Vision";
 const faqData = [
   {
     question: "What is SST?",
@@ -35,14 +36,15 @@ const faqData = [
 const page = () => {
   return (
     <div>
-        <Aboutusbanner/>
-        <Aboutsstpro/>
-        <Aboutdata/>
-        <AboutChoose/>
-        <Corevalue />
-         <Faqs faqData={faqData} />
+      <Dynamicbanner banner_title={"About SST Pro"} />
+      <Aboutsstpro />
+      <Aboutdata />
+      <Vision />
+      <AboutChoose />
+      <Corevalue />
+      <Faqs faqData={faqData} />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

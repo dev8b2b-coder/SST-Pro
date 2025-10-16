@@ -18,7 +18,7 @@ const Description = ({
   }, []);
   return (
     <div
-      className={`flex flex-col ${justify_start == true ? 'items-start' : 'items-center'}  justify-center ${items_start ? " " : "lg:items-end"} `}
+      className={`flex flex-col ${justify_start == true ? 'items-center md:items-start' : 'items-center'}  justify-center ${items_start ? " " : "lg:items-end"} `}
      
       data-aos={animation === false ? '' : 'fade-up'}
     >

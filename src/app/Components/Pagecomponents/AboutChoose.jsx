@@ -3,10 +3,10 @@ import React from "react";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
-import cardPng from '.././../../../public/images/card.webp'
-import icReg   from ".././../../../public/icons/licenece.svg";
+import cardPng from ".././../../../public/images/card.webp";
+import icReg from ".././../../../public/icons/licenece.svg";
 import icMulti from ".././../../../public/icons/market.svg";
-import icUp    from ".././../../../public/icons/return.svg";
+import icUp from ".././../../../public/icons/return.svg";
 import icGlobe from ".././../../../public/icons/global.svg";
 import Card from "./Card";
 
@@ -14,41 +14,39 @@ const items = [
   {
     icon: icReg,
     title: "Licensed &\nRegulated",
-    desc:  "Certified by the Colorado\nSecretary of State.",
-    rotate: "-rotate-3",
+    desc: "Certified by the Colorado\nSecretary of State.",
+    rotate: "-rotate-3"
   },
   {
     icon: icMulti,
     title: "Multi-Market\nExpertise",
-    desc:  "Forex, Real Estate, and\nmore.",
-    rotate: "rotate-1",
+    desc: "Forex, Real Estate, and\nmore.",
+    rotate: "rotate-1"
   },
   {
     icon: icUp,
     title: "Consistent\nReturns",
-    desc:  "Data-driven, steady\nperformance.",
-    rotate: "-rotate-2",
+    desc: "Data-driven, steady\nperformance.",
+    rotate: "-rotate-2"
   },
   {
     icon: icGlobe,
     title: "Global\nPresence",
-    desc:  "Active in the USA and\nUK markets.",
-    rotate: "rotate-2",
-  },
+    desc: "Active in the USA and\nUK markets.",
+    rotate: "rotate-2"
+  }
 ];
 
-
-
-const AboutChoose=()=> {
+const AboutChoose = () => {
   return (
-  <section className="relative pt-14 md:pt-20 pb-20 bg-[#070A12] overflow-hidden">
+    <section className="relative pt-14 md:pt-20 pb-20 bg-[#070A12] overflow-hidden">
       <div
         className="absolute inset-x-0 top-24 h-[520px] opacity-25 pointer-events-none"
         style={{
           backgroundImage:
             "linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)",
           backgroundSize: "64px 64px",
-          backgroundPosition: "center",
+          backgroundPosition: "center"
         }}
       />
 
@@ -69,42 +67,41 @@ const AboutChoose=()=> {
             />
           </div>
         </div>
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 place-items-center">
+        <div className="pt-12 lg:pt-18 max-w-[1440px] m-auto mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  place-items-center">
           <Card
             img={cardPng}
             icon={icReg}
-            title="Licensed & Regulated"
+            title="Licensed & <br/> Regulated"
             desc="Certified by the Colorado Secretary of State."
             angle={-5}
-            className="lg:translate-y-10 xl:translate-y-12"    
+            className="lg:translate-y-10 xl:translate-y-12"
           />
 
           <Card
             img={cardPng}
             icon={icMulti}
-            title="Multi-Market Expertise"
+            title="Multi-Market <br/> Expertise"
             desc="Forex, Real Estate, and more."
             angle={-3}
-            className="lg:-translate-y-6 xl:-translate-y-8"     
+            className="lg:-translate-y-6 xl:-translate-y-8"
           />
-
 
           <Card
             img={cardPng}
             icon={icUp}
-            title="Consistent Returns"
+            title="Consistent  <br/> Returns"
             desc="Data-driven, steady performance."
             angle={-4}
-            className="lg:-translate-y-14 xl:-translate-y-16"  
+            className="lg:-translate-y-14 xl:-translate-y-16"
           />
 
           <Card
             img={cardPng}
             icon={icGlobe}
-            title="Global Presence"
+            title="Global <br/> Presence"
             desc="Active in the USA and UK markets."
             angle={-3}
-            className="lg:translate-y-4 xl:translate-y-6"     
+            className="lg:translate-y-4 xl:translate-y-6"
           />
         </div>
 
@@ -118,5 +115,5 @@ const AboutChoose=()=> {
       </div>
     </section>
   );
-}
+};
 export default AboutChoose;

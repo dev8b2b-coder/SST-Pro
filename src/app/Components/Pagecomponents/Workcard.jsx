@@ -29,7 +29,7 @@ const Workcard = ({ title, description, cardata }) => {
                 className="gradient_border px-[30px] 2xl:px-[60px] pt-[30px] rounded-[40px]"
               >
                 <div className="relative top-[30px]">
-                  <p className="text-[30px] gradient_text pb-2">
+                  <p className="text-2xl md:text-[30px] gradient_text pb-2">
                     {data.title}
                   </p>
                   <span className="">
