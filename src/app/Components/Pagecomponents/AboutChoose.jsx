@@ -1,18 +1,14 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import Button from "../Uiux/Button";
-
-
-import lightCard from ".././../../../public/images/lightblue.png"
-import darkShadow from "../../../../public/images/darkbule.png"
-
+import cardPng from '.././../../../public/images/card.webp'
 import icReg   from ".././../../../public/icons/licenece.svg";
 import icMulti from ".././../../../public/icons/market.svg";
 import icUp    from ".././../../../public/icons/return.svg";
 import icGlobe from ".././../../../public/icons/global.svg";
+import Card from "./Card";
 
 const items = [
   {
@@ -41,11 +37,22 @@ const items = [
   },
 ];
 
+
+
 const AboutChoose=()=> {
   return (
-    <section className="pt-12 md:pt-18 lg:pt-24 2xl:pt-32">
-      <div className="inn_container">
-        {/* heading */}
+  <section className="relative pt-14 md:pt-20 pb-20 bg-[#070A12] overflow-hidden">
+      <div
+        className="absolute inset-x-0 top-24 h-[520px] opacity-25 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px)",
+          backgroundSize: "64px 64px",
+          backgroundPosition: "center",
+        }}
+      />
+
+      <div className="inn_container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 items-start gap-6">
           <div className="lg:col-span-8">
             <Title
@@ -56,69 +63,55 @@ const AboutChoose=()=> {
           </div>
           <div className="lg:col-span-4">
             <Description
-              description={"The smarter, safer, and more transparent way to invest."}
+              description="The smarter, safer, and more transparent way to invest."
               color="text-white"
               align="lg:text-end"
             />
           </div>
         </div>
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 place-items-center">
+          <Card
+            img={cardPng}
+            icon={icReg}
+            title="Licensed & Regulated"
+            desc="Certified by the Colorado Secretary of State."
+            angle={-5}
+            className="lg:translate-y-10 xl:translate-y-12"    
+          />
 
-        {/* cards — same images, staggered layout */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {items.map((c, i) => (
-            <div
-              key={i}
-              className={`
-                relative mx-auto w-[86%] sm:w-[90%] max-w-[320px]
-                ${i===1 ? "sm:-mt-8" : ""} ${i===2 ? "lg:-mt-10" : ""} ${i===3 ? "sm:-mt-8 lg:-mt-14" : ""}
-              `}
-            >
-              {/* dark shadow (same image for all) */}
-              <div className={`absolute -right-2 top-2 w-full ${c.rotate} pointer-events-none`}>
-                <Image
-                  src={darkShadow}
-                  alt="shadow"
-                  className="w-full h-auto select-none"
-                  priority
-                />
-              </div>
+          <Card
+            img={cardPng}
+            icon={icMulti}
+            title="Multi-Market Expertise"
+            desc="Forex, Real Estate, and more."
+            angle={-3}
+            className="lg:-translate-y-6 xl:-translate-y-8"     
+          />
 
-              {/* light card (same image for all) */}
-              <div className={`relative ${c.rotate}`}>
-                <Image
-                  src={lightCard}
-                  alt="card"
-                  className="w-full h-auto drop-shadow-[0_12px_30px_rgba(0,0,0,0.35)]"
-                  priority
-                />
 
-                {/* content on image */}
-                <div className="absolute inset-0 px-5 pt-5 pb-6 flex flex-col">
-                  {c.icon && (
-                    <div className="w-10 h-10 rounded-full bg-black/10 border border-white/15 backdrop-blur-[2px] flex items-center justify-center">
-                      <Image src={c.icon} alt="" className="w-5 h-5" />
-                    </div>
-                  )}
+          <Card
+            img={cardPng}
+            icon={icUp}
+            title="Consistent Returns"
+            desc="Data-driven, steady performance."
+            angle={-4}
+            className="lg:-translate-y-14 xl:-translate-y-16"  
+          />
 
-                  <div className="mt-3 whitespace-pre-line">
-                    <h4 className="text-black text-[18px] md:text-[20px] font-semibold leading-snug">
-                      {c.title}
-                    </h4>
-                    <p className="text-black/70 text-[12.5px] md:text-[13.5px] leading-5 mt-1">
-                      {c.desc}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+          <Card
+            img={cardPng}
+            icon={icGlobe}
+            title="Global Presence"
+            desc="Active in the USA and UK markets."
+            angle={-3}
+            className="lg:translate-y-4 xl:translate-y-6"     
+          />
         </div>
 
-        {/* CTA */}
-        <div className="mt-10 flex justify-center">
+        <div className="mt-12 flex justify-center">
           <Button
             btn_name="Join as an Investor"
-            btn_background="bg-primary"
+            btn_background="bg-[#CFE8E6]"
             color="text-black"
           />
         </div>

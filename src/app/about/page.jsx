@@ -1,10 +1,10 @@
 import React from 'react'
 import Aboutusbanner from '../Components/Pagecomponents/Aboutusbannee'
-import AboutCardSection from '../Components/Pagecomponents/AboutCardSection'
 import Faqs from '../Components/Pagecomponents/Faqs';
 import Corevalue from '../Components/Pagecomponents/Corevalue';
 import Aboutsstpro from '../Components/Pagecomponents/Aboutsstpro';
 import Aboutdata from '../Components/Pagecomponents/Aboutdata';
+import AboutChoose from '../Components/Pagecomponents/AboutChoose';
 const faqData = [
   {
     question: "What is SST?",
@@ -38,8 +38,7 @@ const page = () => {
         <Aboutusbanner/>
         <Aboutsstpro/>
         <Aboutdata/>
-        {/* <AboutChoose/> */}
-        <AboutCardSection/>    
+        <AboutChoose/>
         <Corevalue />
          <Faqs faqData={faqData} />
     </div>

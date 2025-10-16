@@ -380,4 +380,47 @@ body {
   .group:hover .shine {
     transform: skewX(-20deg) translateX(220%);
   }
+  /* ==== Mission (Design 1) styles ==== */
+.mission-frame{
+  background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.04));
+  border-radius: 28px;
+}
+
+.mission-card{
+  background:
+    radial-gradient(120% 140% at 20% 0%, rgba(92,168,255,0.10) 0%, rgba(92,168,255,0.03) 40%, rgba(255,255,255,0.02) 100%),
+    rgba(12,15,20,0.75);
+  border: 1px solid rgba(255,255,255,0.10);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 22px 40px rgba(0,0,0,0.45);
+  transition: transform .45s ease, box-shadow .45s ease;
+}
+.group:hover .mission-card{
+  transform: translateY(-6px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 28px 56px rgba(0,0,0,0.55);
+}
+
+.mission-inner-ring{
+  border: 1px solid rgba(255,255,255,0.10);
+}
+
+.mission-glow{
+  background: radial-gradient(60% 60% at 50% 50%, rgba(120,166,255,0.28) 0%, rgba(120,166,255,0.10) 60%, transparent 100%);
+  filter: blur(26px);
+  transform-origin: 100% 100%;
+}
+
+.mission-icon{
+  background:
+    radial-gradient(120% 120% at 20% 0%, rgba(120,166,255,0.25) 0%, rgba(120,166,255,0.12) 55%, rgba(120,166,255,0.06) 100%),
+    rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.20);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.25),
+    0 8px 18px rgba(0,0,0,0.35);
+}
+
 }
