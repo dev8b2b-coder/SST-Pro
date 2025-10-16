@@ -59,7 +59,7 @@ const Whysst = () => {
                 "Two years of excellence, transparent strategies, <br/> and client-focused solutions."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

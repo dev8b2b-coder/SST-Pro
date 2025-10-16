@@ -131,7 +131,7 @@ const Trackgroth = () => {
                 "Monitor your expenses, track profits, and make <br/> informed investment decisions."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

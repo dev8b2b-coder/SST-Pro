@@ -56,7 +56,7 @@ const Contactusdata = () => {
                 "Questions, quotes, or support—reach the right team instantly."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             /> */}
           </div>
         </div>

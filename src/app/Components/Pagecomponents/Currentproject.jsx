@@ -22,7 +22,7 @@ const Currentproject = () => {
                 "Manage your current projects seamlessly, track updates, <br/> and optimize workflows for better productivity."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

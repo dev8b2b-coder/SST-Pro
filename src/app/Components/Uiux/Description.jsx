@@ -8,6 +8,8 @@ const Description = ({
   align,
   items_start,
   border,
+  justify_start,
+  animation
 }) => {
   useEffect(() => {
     AOS.init({
@@ -16,11 +18,12 @@ const Description = ({
   }, []);
   return (
     <div
-      className={`flex flex-col justify-center items-center ${items_start ? " " : "lg:items-end"} `}
-      data-aos="fade-up"
+      className={`flex flex-col ${justify_start == true ? 'items-start' : 'items-center'}  justify-center ${items_start ? " " : "lg:items-end"} `}
+     
+      data-aos={animation === false ? '' : 'fade-up'}
     >
       <p
-        className={` ${color} text-center lg:${align} main_description pb-4 font_light`}
+        className={` ${color} text-center ${align} main_description pb-4 font_light`}
         dangerouslySetInnerHTML={{ __html: description }}
       />
       {border === false

@@ -70,7 +70,7 @@ function Topstock() {
                 "Stay ahead with real-time market insights and <br /> trending stocks curated for you."
               }
               color={"text-white"}
-              align={"text-end"}
+              align={"lg:text-end"}
             />
           </div>
         </div>

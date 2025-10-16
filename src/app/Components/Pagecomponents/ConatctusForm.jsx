@@ -31,7 +31,7 @@ const ConatctusForm = () => {
           <Description
             description={"Reach out and we’ll get in touch within 24 hours."}
             color={"text-white"}
-            align={"text-end"}
+            align={"lg:text-end"}
           />
         </div>
       </div>
@@ -102,7 +102,7 @@ const ConatctusForm = () => {
             {/* <Description
             description={"Reach out and we’ll get in touch within 24 hours."}
             color={"text-white"}
-            align={"text-end"}
+            align={"lg:text-end"}
           /> */}
             <p className="text-white/70 mt-1 relative z-[1]">
               Reach out and we’ll get in touch within 24 hours.

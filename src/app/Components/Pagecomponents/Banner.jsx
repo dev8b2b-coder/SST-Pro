@@ -150,13 +150,13 @@ const Banner = () => {
             data-aos="fade-up"
             data-aos-duration="1600"
           >
-            {/* <Image
+            <Image
               src={bannergraph}
               alt="bannergraph"
               width={5000}
               height={500}
               className="w-full"
-            /> */}
+            />
           </div>
         </div>
       </div>
