@@ -35,8 +35,8 @@ const Aboutsstpro = () => {
         <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
           <div className="flex  flex-col items-start">
             <div className="w-full">
-              <div className="bg-secondary max-w-5xl flex flex-col md:flex-row justify-center items-center py-4 xl:py-8">
-                <div className="md:ps-6 xl:ps-0 md:pe-12 h-full">
+              <div className="bg-secondary max-w-5xl flex flex-col md:flex-row justify-center  items-center py-4 xl:py-8">
+                <div className=" md:ps-6 xl:ps-3 2xl:ps-0 md:pe-12 h-full">
                   <Image
                     src={missionblack}
                     alt="icon"
@@ -56,8 +56,8 @@ const Aboutsstpro = () => {
                   </span>
                 </div>
               </div>
-              <div className="bg-primary max-w-[650px] lg:max-w-[700px] xl:max-w-4xl flex flex-col md:flex-row justify-center items-center py-4 xl:py-8">
-                <div className="md:ps-6 xl:ps-0 md:pe-12 xl:max-w-[103px]  h-full">
+              <div className="bg-primary max-w-[650px] lg:max-w-[700px] xl:max-w-4xl flex flex-col md:flex-row justify-center xl:justify-start 2xl:justify-center items-center py-4 xl:py-8">
+                <div className="md:ps-6 xl:ps-3 2xl:ps-0  md:pe-12 xl:max-w-[103px]  h-full">
                   <Image
                     src={visionblack}
                     alt="icon"
@@ -87,7 +87,7 @@ const Aboutsstpro = () => {
                 color={"text-white"}
                 items_start={true}
               />
-              <div className="w-max m-auto">
+              <div className="w-max m-auto md:m-[unset]">
                 <Button
                   btn_name={"Join as an Investor"}
                   border_bottom={false}
@@ -107,17 +107,19 @@ const Aboutsstpro = () => {
             >
               <source src="/video/earthvideo.mp4" type="video/mp4" />
             </video>
-            <div className="absolute w-max flex items-center gap-4 bg-[#000000E5] ps-12 pe-4 py-2 rounded-[40px] border-[1px] border-[#FFFFFF4D] top-[30%] right-[4%] ">
-              <p className="text-base md:text-xl lg:text-[25px] text-white"> Entity ID </p>
-              <div className="text-base md:text-base lg:text-xl lg:text-[25px] bg-primary px-5 py-2 rounded-[40px]">
+            <div className="absolute w-max flex items-center gap-2 md:gap-4 bg-[#000000E5] ps-6 2xl:ps-12 pe-2 2xl:pe-4 py-1 2xl:py-2 rounded-[40px] border-[1px] border-[#FFFFFF4D] top-[30%] right-[4%] ">
+              <p className="text-[14px] md:text-xl 2xl:text-[25px] text-white">
+                {" "}Entity ID{" "}
+              </p>
+              <div className="text-[14px] md:text-base xl:text-xl 2xl:text-[25px] bg-primary px-4 md:px-5 py-1.5 md:py-2 rounded-[40px]">
                 20258098855
               </div>
             </div>
-            <div className="absolute w-max flex items-center gap-4 bg-[#000000E5] ps-12 pe-4 py-2 rounded-[40px] border-[1px] border-[#FFFFFF4D] bottom-[20%] md:left-[-4%] ">
-              <p className="text-base md:text-xl lg:text-[25px] text-white">
+            <div className="absolute w-max flex items-center gap-2 md:gap-4 bg-[#000000E5] ps-6 2xl:ps-12 pe-2 2xl:pe-4 py-1 2xl:py-2 rounded-[40px] border-[1px] border-[#FFFFFF4D] bottom-[20%] left-[2%] md:left-[-4%] ">
+              <p className="text-[14px] md:text-xl 2xl:text-[25px] text-white">
                 {" "}Confirmation Number
               </p>
-              <div className="text-base md:text-xl lg:text-[25px] bg-primary px-5 py-2 rounded-[40px]">
+              <div className="text-[14px] md:text-xl 2xl:text-[25px] bg-primary px-4 md:px-5 py-1.5 md:py-2 rounded-[40px]">
                 17752920
               </div>
             </div>

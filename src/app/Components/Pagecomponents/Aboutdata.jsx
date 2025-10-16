@@ -49,18 +49,10 @@ const missionCards = [
 
 const Aboutdata = () => {
   return (
-    <section
-      className="relative overflow-hidden pt-12 md:pt-18 lg:pt-24 2xl:pt-32"
-      style={{ backgroundColor: "#0B0D10" }}
-    >
+    <section className="relative overflow-hidden pt-12 md:pt-18 lg:pt-24 2xl:pt-32">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          background:
-            "radial-gradient(100% 70% at 20% 0%, rgba(92,168,255,0.10) 0%, rgba(92,168,255,0.04) 40%, rgba(255,255,255,0.00) 70%)," +
-            "radial-gradient(80% 70% at 85% 20%, rgba(120,166,255,0.08) 0%, rgba(120,166,255,0.03) 55%, rgba(255,255,255,0.00) 80%)"
-        }}
       />
 
       <div className="inn_container">
@@ -114,7 +106,7 @@ const Aboutdata = () => {
                   />
                 </div>
                 <div className=" max-w-[220px] pt-5">
-                  <p className="text-2xl md:text-[30px] gradient_text pb-2 w-max">
+                  <p className="text-2xl 2xl:text-[30px] gradient_text pb-2 w-max">
                     {data.title}
                   </p>
                   <span className="sub_description text-white">
