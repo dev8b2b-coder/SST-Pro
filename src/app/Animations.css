@@ -203,4 +203,179 @@
     transform: rotateY(359deg);
   }
 }
+/* Card base animation on load */
+.mission-card {
+  opacity: 0;
+  animation: fadeUp 0.6s ease-out forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Delay for staggered load animation */
+.mission-card.delay-1 { animation-delay: 0.1s; }
+.mission-card.delay-2 { animation-delay: 0.2s; }
+.mission-card.delay-3 { animation-delay: 0.3s; }
+.mission-card.delay-4 { animation-delay: 0.4s; }
+.mission-card.delay-5 { animation-delay: 0.5s; }
+
+/* Hover effect — lifted, scaled, shadow */
+.mission-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(74, 161, 255, 0.4);
+}
+
+/* Icon animation on hover */
+.mission-card:hover .icon-animate {
+  animation: iconPulse 0.6s ease-in-out;
+}
+
+/* Icon pulse */
+@keyframes iconPulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* Fade up load animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Water wave effect overlay */
+.wave-effect {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(255, 255, 255, 0.15),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      rgba(255, 255, 255, 0.1),
+      transparent 70%
+    );
+  filter: blur(12px);
+  animation: waveMove 6s ease-in-out infinite alternate;
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+/* Show wave only on hover */
+.card-hovered .wave-effect {
+  opacity: 1;
+}
+
+/* wave movement keyframes */
+@keyframes waveMove {
+  0% {
+    background-position: 20% 30%, 80% 70%;
+  }
+  100% {
+    background-position: 25% 35%, 85% 75%;
+  }
+}
+ .animate-enter {
+          animation: enter 600ms cubic-bezier(.22,.61,.36,1) forwards;
+        }
+        @keyframes enter {
+          from { opacity: 0; transform: translateY(24px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* masked glow, no page bg spill */
+        .glow {
+          position: absolute;
+          inset: 6px;
+          border-radius: 20px;
+          pointer-events: none;
+          transition: opacity 260ms ease;
+          background: conic-gradient(
+            from 180deg,
+            rgba(105,195,255,.35),
+            rgba(92,149,255,.35),
+            rgba(207,232,230,.35),
+            rgba(105,195,255,.35)
+          );
+          filter: blur(16px) saturate(120%);
+          mask: linear-gradient(#000, #000);
+        }
+
+        /* glossy sweep */
+        .shine {
+          position: absolute;
+          inset: -2px;
+          border-radius: 20px;
+          pointer-events: none;
+          background: linear-gradient(120deg, transparent 35%, rgba(255,255,255,.55) 50%, transparent 65%);
+          transform: translateX(-120%);
+          animation: sweep 900ms ease-out forwards;
+          mix-blend-mode: screen;
+        }
+        @keyframes sweep {
+          to { transform: translateX(120%); }
+        }
+
+        /* cursor-tracked spotlight + shadow inside card only */
+        .spot {
+          position: absolute;
+          inset: 0;
+          border-radius: 20px;
+          pointer-events: none;
+          opacity: 0;
+          transition: opacity 220ms ease;
+          background:
+            radial-gradient(220px 160px at var(--mx,50%) var(--my,50%), rgba(0,0,0,.18), transparent 60%),
+            radial-gradient(140px 120px at var(--mx,50%) var(--my,50%), rgba(255,255,255,.10), transparent 70%);
+          filter: blur(12px);
+        }
+        .group:hover .spot { opacity: 1; }
+
+        /* subtle border pulse when hovered */
+        .card-surface {
+          box-shadow:
+            0 18px 40px rgba(0,0,0,.25),
+            0 2px 0 rgba(0,0,0,.04) inset;
+          transition: box-shadow 240ms ease, transform 240ms ease;
+        }
+        .group:hover .card-surface {
+          animation: pulse 700ms ease-out 1;
+          box-shadow:
+            0 24px 60px rgba(0,0,0,.32),
+            0 0 0 1px rgba(120,180,255,.20) inset;
+        }
+        @keyframes pulse {
+          0%   { box-shadow: 0 18px 40px rgba(0,0,0,.25), 0 0 0 0 rgba(120,180,255,0) inset; }
+          40%  { box-shadow: 0 28px 70px rgba(0,0,0,.38), 0 0 0 2px rgba(120,180,255,.35) inset; }
+          100% { box-shadow: 0 24px 60px rgba(0,0,0,.32), 0 0 0 1px rgba(120,180,255,.20) inset; }
+        }
+
+        /* mobile tap ripple */
+        .ripple {
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          border-radius: 9999px;
+          background: radial-gradient(circle, rgba(255,255,255,.45), transparent 60%);
+          transform: translate(-50%, -50%) scale(0);
+          animation: ripple 650ms ease-out forwards;
+          pointer-events: none;
+        }
+        @keyframes ripple {
+          to { transform: translate(-50%, -50%) scale(14); opacity: 0; }
+        }
+
 

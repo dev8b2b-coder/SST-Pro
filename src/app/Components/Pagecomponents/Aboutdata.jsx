@@ -94,7 +94,7 @@ const Aboutdata = () => {
             {missionCards.map((data, index) =>
               <div
                 key={index}
-                className="p-8 shadow-[inset_0px_1px_20px_20px_#4aa1ff45] rounded-[40px]"
+                className={`mission-card delay-${index + 1} p-8 shadow-[inset_0px_1px_20px_20px_#4aa1ff45] rounded-[40px]`}
               >
                 <div className="bg-secondary flex justify-center items-center w-[44px] md:w-[50px] xl:w-[66px] h-[44px] md:h-[50px] xl:h-[66px] rounded-[50%]">
                   <Image
@@ -102,7 +102,7 @@ const Aboutdata = () => {
                     alt="icon"
                     width={1000}
                     height={500}
-                    className="max-w-[42px] max-h-[42px] object-contain"
+                    className="icon-animate max-w-[42px] max-h-[42px] object-contain"
                   />
                 </div>
                 <div className=" max-w-[220px] pt-5">

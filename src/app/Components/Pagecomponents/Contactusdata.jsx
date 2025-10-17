@@ -11,14 +11,14 @@ const contacts=[
     icon: <MessageSquare className="w-5 h-5 text-white" />,
     heading: "Chat to sales",
     subtext: "Speak to our friendly team.",
-    actionText: "sales@untitledui.com",
-    href: "mailto:sales@untitledui.com",
+    actionText: "info@sst.pro",
+    href: "mailto:info@sst.pro",
   },
   {
     icon: <Bell className="w-5 h-5 text-white" />,
     heading: "Chat to support",
     subtext: "We're here to help.",
-    actionText: "dev8b2b@gmail.com",
+    actionText: "info@sst.pro",
     href: "mailto:info@sst.pro",
   },
   
@@ -27,7 +27,7 @@ const contacts=[
     heading: "Visit us",
     subtext: "Visit our office HQ.",
     actionText: "View on Google Maps",
-    href: "https://maps.google.com",
+    // href: "https://maps.google.com",
   },
   {
     icon: <Phone className="w-5 h-5 text-white" />,
