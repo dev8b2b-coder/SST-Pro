@@ -23,17 +23,17 @@ const headerlinks = [
   {
     id: 3,
     pagename: "Services",
-    pagelink: "/"
+    pagelink: "#"
   },
   {
     id: 4,
     pagename: "Markets",
-    pagelink: "/"
+    pagelink: "#"
   },
   {
     id: 5,
     pagename: "Security",
-    pagelink: "/"
+    pagelink: "#"
   },
   {
     id: 6,
@@ -130,7 +130,6 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Menu List */}
           <div
             className={`fixed z-[2] h-[120vh] bg-[#132941]  ${Menu
               ? "top-[-20px] left-0"
@@ -138,7 +137,7 @@ const Header = () => {
           >
             <div className="relative flex flex-col w-[72%] m-auto justify-around items-start pt-[110px] py-1 font_secondary">
               {headerlinks.map((data, index) =>
-                <div className="mt-2" key={index}>
+                <div className="mt-2" key={index} onClick={() => setMenu(false)}>
                   <Link href={data.pagelink}>
                     <span className="text-lg text-white font_light">
                       {data.pagename}
@@ -146,7 +145,7 @@ const Header = () => {
                   </Link>
                 </div>
               )}
-              <div className="mt-5 block md:hidden">
+              <div className="mt-5 block md:hidden" onClick={() => setMenu(false)}>
                 <Link href={"https://clients.sst.pro/register"}>
                   <Button
                     btn_name={"Sign Up"}

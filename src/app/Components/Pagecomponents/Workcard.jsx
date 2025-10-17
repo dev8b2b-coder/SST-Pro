@@ -22,7 +22,7 @@ const Workcard = ({ title, description, cardata }) => {
           </div>
         </div>
         <div className="pt-12 lg:pt-18">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 xl:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4 xl:gap-8">
             {cardata.map((data, index) =>
               <div
                 key={index}
@@ -76,6 +76,15 @@ const Workcard = ({ title, description, cardata }) => {
           height={500}
           className="w-full"
         />
+         {/* <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-half "
+            >
+              <source src="/video/wavesvideo.mp4" type="video/mp4" />
+            </video> */}
       </div>
     </div>
   );

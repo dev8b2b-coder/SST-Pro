@@ -87,7 +87,7 @@ const page = () => {
         description={
           "Investing in real estate requires knowledge, strategy, and trusted guidance. SST Pro provides all three for confident, rewarding investments."
         }
-        left_cardbanner={realestateglobleposter}
+         videoSrc='/video/realstatevideo.mp4'
         right_description={`The real estate market is one of the most stable and lucrative asset classes, offering opportunities across residential, commercial, and mixed-use properties. <br/>
         At SST Pro, we transform market insights into profitable ventures. Through expert analysis, strategic property selection, and professional fund management, we offer investors annual returns  delivered securely and transparently.
         `}

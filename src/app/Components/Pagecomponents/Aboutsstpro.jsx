@@ -2,8 +2,8 @@ import React from "react";
 import Title from "../Uiux/Title";
 import Description from "../Uiux/Description";
 import Image from "next/image";
-import missionblack from "../../../../public/icons/missionblack.svg";
-import visionblack from "../../../../public/icons/visionblack.svg";
+import missionblack from "../../../../public/icons/earthicon.svg";
+import visionblack from "../../../../public/icons/securityicon.svg";
 import Button from "../Uiux/Button";
 import aboutsst from "../../../../public/images/aboutsst.webp";
 
@@ -35,7 +35,7 @@ const Aboutsstpro = () => {
         <div className="grid grid-cols-1 md:grid-cols-[3fr_2fr]">
           <div className="flex  flex-col items-start">
             <div className="w-full">
-              <div className="bg-secondary max-w-5xl flex flex-col md:flex-row justify-center  items-center py-4 xl:py-8">
+              <div className="bg-secondary max-w-[650px] lg:max-w-[700px] xl:max-w-4xl flex flex-col md:flex-row justify-center xl:justify-start 2xl:justify-center  items-center py-4 xl:py-8">
                 <div className=" md:ps-6 xl:ps-3 2xl:ps-0 md:pe-12 h-full">
                   <Image
                     src={missionblack}
@@ -46,13 +46,11 @@ const Aboutsstpro = () => {
                   />
                 </div>
                 <div className="md:ps-12 text-center md:text-start px-3 md:px-0 md:border-s-[3px] border-dashed border-primary">
-                  <p className="text-[26px] md:text-[30px] text-black md:pb-2">
-                    Mission
-                  </p>
+                  {/* <p className="text-[26px] md:text-[30px] text-black md:pb-2">
+                    
+                  </p> */}
                   <span className="sub_description text-black">
-                    To simplify investing and empower individuals and businesses
-                    with intelligent <br /> financial solutions that drive
-                    sustainable growth.
+                   With operations in the USA and the United Kingdom, we help <br/> investors achieve consistent, secure, and sustainable financial <br/>growth through data-driven strategies.
                   </span>
                 </div>
               </div>
@@ -67,13 +65,11 @@ const Aboutsstpro = () => {
                   />
                 </div>
                 <div className="md:ps-12 text-center md:text-start px-3 md:px-0 md:border-s-[3px] border-dashed border-secondary">
-                  <p className="text-[26px] md:text-[30px] text-black md:pb-2">
+                  {/* <p className="text-[26px] md:text-[30px] text-black md:pb-2">
                     Vision
-                  </p>
+                  </p> */}
                   <span className="sub_description text-black">
-                    To become a globally trusted financial partner recognized
-                    for <br />
-                    innovation, transparency, and client success.
+                   SST Pro Ltd is officially registered under the laws of Colorado and <br/> certified by the Secretary of State of Colorado, maintaining full <br/>compliance and good standing.
                   </span>
                 </div>
               </div>
