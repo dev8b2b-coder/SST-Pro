@@ -4,7 +4,7 @@ import Description from "../Uiux/Description";
 import globlegrothcard from "../../../../public/images/globlegrothcard.webp";
 import Image from "next/image";
 import Arrowbtn from "../Uiux/Arrowbtn";
-const Globlegroth = ({title,description, left_cardbanner,right_description}) => {
+const Globlegroth = ({title,description,right_description,videoSrc}) => {
   return (
     <div className="pt-12 md:pt-18 lg:pt-24 2xl:pt-32">
       <div className="inn_container">
@@ -27,13 +27,15 @@ const Globlegroth = ({title,description, left_cardbanner,right_description}) => 
         <div className="pt-12 lg:pt-18 md:px-12 xl:px-16 2xl:px-20">
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="lg:w-[45%] xl:w-[55%]">
-              <Image
-                src={left_cardbanner}
-                alt="forexgloblegraph"
-                width={2000}
-                height={500}
-                className=""
-              />
+               <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="  w-full h-full object-cover -z-5 brightness-[0.7] rounded-4xl border border-b-blue-500   "
+            >
+              <source src={videoSrc} type="video/mp4" />
+            </video>
             </div>
             <div className="lg:w-[55%] xl:w-[45%] hidden lg:block">
               <div className="max-w-[644px] m-auto relative">

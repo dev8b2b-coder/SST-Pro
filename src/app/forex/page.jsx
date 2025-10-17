@@ -87,7 +87,7 @@ const page = () => {
         description={
           "Check out our achievements to trust our expertise proven performance, reliable <br/> growth, transparent management."
         }
-        left_cardbanner={forexgloblegraph}
+        videoSrc='/video/graphvideo.mp4'
         right_description={
           "The Foreign Exchange (Forex) market processes more than $7 trillion in daily transactions, making it the most liquid and dynamic market in the world. At SST Pro, we transform this volatility into opportunity. Through data-backed strategies, algorithmic models, and professional fund management, we offer our investors monthly returns between 10% and 12% securely and transparently."
         }
